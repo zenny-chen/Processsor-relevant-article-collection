@@ -16,3 +16,5 @@
 1. [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 1. [MIPS Open™ Architecture](https://www.mipsopen.com/components-category/mips-open-architecture/)
 1. [Arm CPU Architecture](https://developer.arm.com/architectures/cpu-architecture)
+1. [RISC-V Specifications](https://riscv.org/specifications/)
+
