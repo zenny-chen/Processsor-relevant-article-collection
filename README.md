@@ -26,4 +26,5 @@
 1. [MIPS Open™ Architecture](https://www.mipsopen.com/components-category/mips-open-architecture/)
 1. [Arm CPU Architecture](https://developer.arm.com/architectures/cpu-architecture)
 1. [RISC-V Specifications](https://riscv.org/specifications/)
+1. [arm KEIL 8051 Instruction Set Manual](http://www.keil.com/support/man/docs/is51/)
 
