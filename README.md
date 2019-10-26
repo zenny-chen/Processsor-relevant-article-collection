@@ -3,7 +3,7 @@
 
 <br />
 
-## 各处理器相关的高性能计算资料
+## 关于各种处理器的高性能计算与嵌入式系统相关资料
 
 1. [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
 1. [性能之殇：从冯·诺依曼瓶颈谈起](https://www.toutiao.com/i6636342495770853901)
