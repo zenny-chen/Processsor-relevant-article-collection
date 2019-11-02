@@ -29,4 +29,5 @@
 1. [Arm CPU Architecture](https://developer.arm.com/architectures/cpu-architecture)
 1. [RISC-V Specifications](https://riscv.org/specifications/)
 1. [arm KEIL 8051 Instruction Set Manual](http://www.keil.com/support/man/docs/is51/)
+1. [C8051F Series](https://www.silabs.com/support/resources.ct-data-sheets.ct-manuals.page=3)
 
