@@ -30,4 +30,6 @@
 1. [RISC-V Specifications](https://riscv.org/specifications/)
 1. [arm KEIL 8051 Instruction Set Manual](http://www.keil.com/support/man/docs/is51/)
 1. [C8051F Series](https://www.silabs.com/support/resources.ct-data-sheets.ct-manuals.page=3)
+1. [HiFi 2 Audio Engine Instruction Set Architecture Reference Manua](https://wenku.baidu.com/view/3a9e44c3d5bbfd0a7956735c.html)
+1. [Cadence HiFi 3 DSP User Manual Page](https://www.manualslib.com/manual/1484529/Cadence-Hifi-3-Dsp.html)
 
