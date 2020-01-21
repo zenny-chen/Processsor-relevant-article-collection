@@ -6,7 +6,7 @@
 ## 关于各种处理器的高性能计算与嵌入式系统相关资料
 
 1. [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
-1. [性能之殇：从冯·诺依曼瓶颈谈起](https://www.toutiao.com/i6636342495770853901)
+1. [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 1. [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 1. [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 1. [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
