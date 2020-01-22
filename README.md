@@ -10,6 +10,7 @@
 1. [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 1. [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 1. [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
+1. [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
 
 <br />
 
