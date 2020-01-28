@@ -12,6 +12,7 @@
 1. [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
 1. [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
 1. [计算机的Cache和Memory访问时Write-back，Write-through及write allocate的区别](https://www.cnblogs.com/guojingdeyuan/p/7626983.html)
+1. [Understanding write-through, write-around and write-back caching (with Python)](https://shahriar.svbtle.com/Understanding-writethrough-writearound-and-writeback-caching-with-python)
 
 <br />
 
