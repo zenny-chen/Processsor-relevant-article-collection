@@ -6,6 +6,8 @@
 ## 关于各种处理器的高性能计算与嵌入式系统相关资料
 
 1. [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
+1. [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
+1. [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
 1. [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 1. [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 1. [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
