@@ -35,6 +35,7 @@
 ## 各个处理器架构ISA编程指南
 
 1. [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/en-us/articles/intel-sdm)
+1. [Intel® Threading Building Blocks Developer Guide](https://software.intel.com/en-us/tbb-user-guide)
 1. [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 1. [MIPS Open™ Architecture](https://www.mipsopen.com/components-category/mips-open-architecture/)
 1. [Arm CPU Architecture](https://developer.arm.com/architectures/cpu-architecture)
