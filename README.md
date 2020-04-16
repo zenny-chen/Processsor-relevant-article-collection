@@ -11,6 +11,7 @@
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
 - [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
+- [并发原理系列二：浅论Lock 与X86 Cache 一致性](https://www.toutiao.com/a6815374276636443148/)
 - [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
 - [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
