@@ -14,6 +14,7 @@
 - [并发原理系列二：浅论Lock 与X86 Cache 一致性](https://www.toutiao.com/a6815374276636443148/)
 - [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
+- [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
 - [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
 - [计算机的Cache和Memory访问时Write-back，Write-through及write allocate的区别](https://www.cnblogs.com/guojingdeyuan/p/7626983.html)
