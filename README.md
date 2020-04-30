@@ -22,6 +22,7 @@
 - [圖解RAM結構與原理，系統記憶體的Channel、Chip與Bank](https://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand?fbclid=IwAR0yj1dCTZmi0FpYLDV6BfwEj11iVtLMtIHq1bdep7CtH9V6YzFhliU6tK4)
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [英特尔漏洞门原理解析，保护模式是如何失效的？](https://www.toutiao.com/i6509335383929520648/)
+- [基本ROP讲解](https://www.toutiao.com/a6821010957485998605/)
 - [剖析内存中的程序之秘](https://www.toutiao.com/i6513516605794681347/)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
