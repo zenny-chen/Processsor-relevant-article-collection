@@ -27,6 +27,7 @@
 - [初探ROP](https://blog.csdn.net/weixin_41185953/article/details/104901494)
 - [再探ROP(上)](https://blog.csdn.net/weixin_41185953/article/details/105364797)
 - [初探利用angr进行漏洞挖掘（上）](https://www.toutiao.com/a6800737709552828942/)
+- [一个基于汇编的中心重定向框架](https://mp.weixin.qq.com/s?__biz=MzA5NzMwODI0MA==&mid=2647766644&idx=1&sn=134c8defba961c7573595bf7b2161bc6&chksm=8887cd4bbff0445d24f3ba2d8487611b3f43f2f6c1990d21ed79d5de5645891291e8805aae25&mpshare=1&scene=23&srcid&sharer_sharetime=1589431751498&sharer_shareid=35ac76bf9ad4a719bab0994dd606caf6%23rd)
 - [剖析内存中的程序之秘](https://www.toutiao.com/i6513516605794681347/)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
