@@ -10,6 +10,7 @@
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
 - [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
+- [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 - [访问任意数组元素的性能相同？抛开Cache谈性能就是耍流氓](https://www.toutiao.com/a6821051726448034315/)
 - [并发原理系列二：浅论Lock 与X86 Cache 一致性](https://www.toutiao.com/a6815374276636443148/)
