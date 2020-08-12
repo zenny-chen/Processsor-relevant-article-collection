@@ -32,6 +32,7 @@
 - [剖析内存中的程序之秘](https://www.toutiao.com/i6513516605794681347/)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
+- [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
 - [从一辆小车开始你的机器人爱好之旅（上）](https://www.toutiao.com/a6818401220323967500/)
 
 <br />
