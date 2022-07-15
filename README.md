@@ -30,6 +30,7 @@
 - [Understanding write-through, write-around and write-back caching (with Python)](https://shahriar.svbtle.com/Understanding-writethrough-writearound-and-writeback-caching-with-python)
 - [Emulating x86 AES Intrinsics on ARMv8-A](https://blog.michaelbrase.com/2018/05/08/emulating-x86-aes-intrinsics-on-armv8-a/)
 - [ARMv8替换x86 crc32汇编指令](https://support.huaweicloud.com/codeprtr-kunpenggrf/kunpengtaishanporting_12_0029.html)
+- [ARM MTE简介（Memory Tagging Extension）](https://www.toutiao.com/article/7120105520144482820/)
 - [圖解RAM結構與原理，系統記憶體的Channel、Chip與Bank](https://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand?fbclid=IwAR0yj1dCTZmi0FpYLDV6BfwEj11iVtLMtIHq1bdep7CtH9V6YzFhliU6tK4)
 - [1.3：从芯片说起~自己动手做RAM](https://www.toutiao.com/i7049233754413400579/)
 - [1.4：从芯片说起~自己动手做ALU](https://www.toutiao.com/i7050281617067147806/)
