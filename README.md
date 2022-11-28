@@ -5,6 +5,7 @@
 
 ## 关于各种处理器的高性能计算与嵌入式系统相关资料
 
+- [数字芯片是怎样设计出来的？](https://www.toutiao.com/article/7169008826468188679/)
 - [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
