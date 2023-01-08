@@ -87,9 +87,7 @@
 - [Memory tagging extension (MTE, MemTag, ARMv8.5-MemTag)](https://en.wikichip.org/wiki/arm/mte)
 - [Bringing Armv8.2 Instructions to Android Runtime](https://community.arm.com/developer/tools-software/oss-platforms/b/android-blog/posts/bringing-armv8-2-instructions-to-android-runtime)
 - [ARM ISA Intrinsics](https://developer.arm.com/architectures/instruction-sets/intrinsics/)
-- ARMv8 -- `void FlushInstructionCacheSection(const uint8_t *start, const uint8_t *end)` （Code from [**Dolphin**](https://github.com/dolphin-emu/dolphin), contributed by the Mono Project）
-
-![ARMv8-FlushICacheSection](images/ARMv8-FlushICacheSection.png)
+- A good implementation for instruction Cache flush operation from [Dolphin](https://github.com/dolphin-emu/dolphin), contributed by the Mono project. See **`FlushIcache`** and **`FlushIcacheSection**` in [**Arm64Emitter.cpp**](https://github.com/dolphin-emu/dolphin/blob/098e2b3628fbb240ffd6c8124ee8cd729a522798/Source/Core/Common/Arm64Emitter.cpp)
 
 <br />
 
