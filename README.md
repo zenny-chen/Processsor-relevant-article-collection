@@ -72,7 +72,7 @@
 - [浅谈RISC-V指令集的基本指令格式和立即数操作](https://www.toutiao.com/i6731643373674824204/?group_id=6731643373674824204)
 - [浅谈RISC-V指令集（二）- 整数计算指令](https://www.toutiao.com/i6734682667268178435/)
 - [RISC-V中的条件分支指令详解](https://www.toutiao.com/a6736736394133111304/)
-- [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)
+- [RISC-V Assembly Programmer's Manual](https://github.com/riscv/riscv-asm-manual/blob/master/riscv-asm.md)（**GOT**: [Global Offset Table](https://en.wikipedia.org/wiki/Global_Offset_Table)）
 - [我们一起学RISC-V](https://www.toutiao.com/a6904432642612167172/)
 - [我们一起学RISC-V——01-了解处理器和寄存器](https://www.toutiao.com/a6904491425560281604/)
 - [我们一起学RISC-V——02-深入了解机器模式下的CSR](https://www.toutiao.com/a6905393723081867780/)
