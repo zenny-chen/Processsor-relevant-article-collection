@@ -34,6 +34,7 @@
 - [1.4：从芯片说起~自己动手做ALU](https://www.toutiao.com/i7050281617067147806/)
 - [1.5：从芯片说起~自己设计指令](https://www.toutiao.com/i7051383108465181215/)
 - [1.6：从芯片说起~完成你的第一个芯片](https://www.toutiao.com/i7051454906619937294/)
+- [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [现代存储非常快，但是API很糟糕](https://www.toutiao.com/i6899573862590054926/)
 - [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
