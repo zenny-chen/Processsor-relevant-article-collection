@@ -102,6 +102,8 @@
 - [MIPS Open™ Architecture](https://www.mipsopen.com/components-category/mips-open-architecture/)
 - [Arm CPU Architecture](https://developer.arm.com/architectures/cpu-architecture)
 - [RISC-V Specifications](https://riscv.org/specifications/)
+- [Qualcomm® Kryo™ CPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
+- [Qualcomm® Hexagon™ DSP](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
 - [arm KEIL 8051 Instruction Set Manual](http://www.keil.com/support/man/docs/is51/)
 - [C8051F Series](https://www.silabs.com/support/resources.ct-data-sheets.ct-manuals.page=3)
 - [HiFi 2 Audio Engine Instruction Set Architecture Reference Manua](https://wenku.baidu.com/view/3a9e44c3d5bbfd0a7956735c.html)
