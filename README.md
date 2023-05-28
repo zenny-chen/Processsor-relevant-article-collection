@@ -105,7 +105,10 @@
 - [RISC-V Specifications](https://riscv.org/specifications/)
 - [Qualcomm® Kryo™ CPU](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
 - [Qualcomm® Hexagon™ DSP](https://developer.qualcomm.com/sites/default/files/docs/adreno-gpu/snapdragon-game-toolkit/learn_guides.html)
+- [Broadcom BCM7218X](https://www.broadcom.com/products/broadband/set-top-box/bcm7218x)
+- [Broadcom BCM49428](https://www.broadcom.com/products/wireless/wireless-lan-infrastructure/bcm49428)
 - [arm KEIL 8051 Instruction Set Manual](http://www.keil.com/support/man/docs/is51/)
 - [C8051F Series](https://www.silabs.com/support/resources.ct-data-sheets.ct-manuals.page=3)
 - [HiFi 2 Audio Engine Instruction Set Architecture Reference Manua](https://wenku.baidu.com/view/3a9e44c3d5bbfd0a7956735c.html)
 - [Cadence HiFi 3 DSP User Manual Page](https://www.manualslib.com/manual/1484529/Cadence-Hifi-3-Dsp.html)
+
