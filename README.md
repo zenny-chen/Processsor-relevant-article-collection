@@ -63,6 +63,7 @@
 - [英特尔®以太网控制器E810介绍：面向5G核心网络](https://www.toutiao.com/a6870508665388925444/)
 - [TLS 加速技术：Intel QuickAssist Technology（QAT）解决方案](https://www.toutiao.com/article/7234332484958306872/)
 - [光学卷积处理芯片---自动驾驶高性能运算平台的福音？](https://www.toutiao.com/article/7249153468223635979/)
+- [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 
 <br />
 
