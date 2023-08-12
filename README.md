@@ -45,7 +45,6 @@
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
 - [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
-- [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [英特尔漏洞门原理解析，保护模式是如何失效的？](https://www.toutiao.com/i6509335383929520648/)
 - [走进栈溢出](https://blog.csdn.net/weixin_41185953/article/details/104855669)
 - [初探ROP](https://blog.csdn.net/weixin_41185953/article/details/104901494)
@@ -59,10 +58,13 @@
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
+- [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
 - [从一辆小车开始你的机器人爱好之旅（上）](https://www.toutiao.com/a6818401220323967500/)
 - [英特尔®以太网控制器E810介绍：面向5G核心网络](https://www.toutiao.com/a6870508665388925444/)
 - [TLS 加速技术：Intel QuickAssist Technology（QAT）解决方案](https://www.toutiao.com/article/7234332484958306872/)
 - [光学卷积处理芯片---自动驾驶高性能运算平台的福音？](https://www.toutiao.com/article/7249153468223635979/)
+- [PCB 盘中孔是什么？PCB盘中孔工艺流程总结，图文结合，轻松搞定](https://www.toutiao.com/article/7259672991431475768/)
+- [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 
 <br />
