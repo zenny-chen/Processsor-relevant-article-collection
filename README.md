@@ -58,6 +58,7 @@
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
+- [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
 - [从一辆小车开始你的机器人爱好之旅（上）](https://www.toutiao.com/a6818401220323967500/)
 - [英特尔®以太网控制器E810介绍：面向5G核心网络](https://www.toutiao.com/a6870508665388925444/)
