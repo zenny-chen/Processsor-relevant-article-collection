@@ -21,6 +21,7 @@
 - [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 - [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
 - [彻底搞懂 IO 底层原理](https://www.toutiao.com/i6901537900752585228/)
+- [CPU 伪共享是如何发生的？又该如何避免？](https://www.toutiao.com/article/7268439651449405986/)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 - [访问任意数组元素的性能相同？抛开Cache谈性能就是耍流氓](https://www.toutiao.com/a6821051726448034315/)
 - [阿里P8说要搞懂volatile 关键字，就靠这 26 张图](https://www.toutiao.com/i6898303659269145102/)
