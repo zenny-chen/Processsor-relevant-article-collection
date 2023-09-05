@@ -59,6 +59,7 @@
 - [NVMe探索](https://www.toutiao.com/a6869199858436145668/)
 - [DirectStorage is coming to PC](https://devblogs.microsoft.com/directx/directstorage-is-coming-to-pc/)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
+- [一文读懂STM32芯片总线系统结构](https://www.toutiao.com/article/7254553014319448611/)
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
