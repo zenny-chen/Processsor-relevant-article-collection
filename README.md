@@ -63,6 +63,8 @@
 - [一文读懂STM32芯片总线系统结构](https://www.toutiao.com/article/7254553014319448611/)
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
+- [Multiplexer \(MUX\)](https://en.wikichip.org/wiki/multiplexer)
+- [MUX多路选择器（Multiplexer）](https://zhuanlan.zhihu.com/p/639316069)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
 - [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
