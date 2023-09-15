@@ -74,9 +74,9 @@
 - [TLS 加速技术：Intel QuickAssist Technology（QAT）解决方案](https://www.toutiao.com/article/7234332484958306872/)
 - [光学卷积处理芯片---自动驾驶高性能运算平台的福音？](https://www.toutiao.com/article/7249153468223635979/)
 - [PCB 盘中孔是什么？PCB盘中孔工艺流程总结，图文结合，轻松搞定](https://www.toutiao.com/article/7259672991431475768/)
+- [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
-- [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 
 <br />
 
