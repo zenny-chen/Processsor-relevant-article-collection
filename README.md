@@ -40,6 +40,10 @@
 - [Algorithms for Modern Hardware](https://en.algorithmica.org/hpc/)
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [现代存储非常快，但是API很糟糕](https://www.toutiao.com/i6899573862590054926/)
+- [剖析内存中的程序之秘](https://www.toutiao.com/i6513516605794681347/)
+- [NVMe探索](https://www.toutiao.com/a6869199858436145668/)
+- [DirectStorage is coming to PC](https://devblogs.microsoft.com/directx/directstorage-is-coming-to-pc/)
+- [极致优化 SSD 并行读调度](https://www.toutiao.com/article/7278486952729444918/)
 - [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
 - [AMD Rome – is it for real? Architecture and initial HPC performance](https://www.dell.com/support/article/zh-cn/sln319015/amd-rome-is-it-for-real-architecture-and-initial-hpc-performance)
 - [线程模型Reactor/Proactor的区别](https://www.toutiao.com/i6902028903288717835/)
@@ -55,10 +59,6 @@
 - [再探ROP(上)](https://blog.csdn.net/weixin_41185953/article/details/105364797)
 - [初探利用angr进行漏洞挖掘（上）](https://www.toutiao.com/a6800737709552828942/)
 - [一个基于汇编的中心重定向框架](https://mp.weixin.qq.com/s?__biz=MzA5NzMwODI0MA==&mid=2647766644&idx=1&sn=134c8defba961c7573595bf7b2161bc6&chksm=8887cd4bbff0445d24f3ba2d8487611b3f43f2f6c1990d21ed79d5de5645891291e8805aae25&mpshare=1&scene=23&srcid&sharer_sharetime=1589431751498&sharer_shareid=35ac76bf9ad4a719bab0994dd606caf6%23rd)
-- [剖析内存中的程序之秘](https://www.toutiao.com/i6513516605794681347/)
-- [NVMe探索](https://www.toutiao.com/a6869199858436145668/)
-- [DirectStorage is coming to PC](https://devblogs.microsoft.com/directx/directstorage-is-coming-to-pc/)
-- [极致优化 SSD 并行读调度](https://www.toutiao.com/article/7278486952729444918/)
 - [干货！嵌入式系统“四个地址”，划重点！](https://haokan.baidu.com/v?pd=wisenatural&vid=15776113190438521718)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
 - [一文读懂STM32芯片总线系统结构](https://www.toutiao.com/article/7254553014319448611/)
@@ -76,6 +76,7 @@
 - [PCB 盘中孔是什么？PCB盘中孔工艺流程总结，图文结合，轻松搞定](https://www.toutiao.com/article/7259672991431475768/)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
+- [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 
 <br />
 
