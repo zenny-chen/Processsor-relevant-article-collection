@@ -7,6 +7,7 @@
 
 - [数字芯片是怎样设计出来的？](https://www.toutiao.com/article/7169008826468188679/)
 - [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
+- [学习笔记丨《图解系统》](https://www.toutiao.com/article/7279780057982206479/)
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
 - [DSA AI芯片，相对于GPGPU，究竟有多大的能效优势？主要是从哪些方面提高了能效？](https://zhuanlan.zhihu.com/p/457265026)
