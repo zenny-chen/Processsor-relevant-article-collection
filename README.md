@@ -53,6 +53,7 @@
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
 - [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [干货分享之ESXi CPU调度机制和原理](https://www.toutiao.com/article/7245537321754378786/)
+- [malloc 背后的虚拟内存 和 malloc实现原理](https://www.toutiao.com/article/7249649334319448628/)
 - [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
 - [英特尔漏洞门原理解析，保护模式是如何失效的？](https://www.toutiao.com/i6509335383929520648/)
 - [走进栈溢出](https://blog.csdn.net/weixin_41185953/article/details/104855669)
