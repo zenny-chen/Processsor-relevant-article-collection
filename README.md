@@ -16,6 +16,7 @@
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
 - [一篇详解ARM Cortex-A9处理器相关介绍](https://www.toutiao.com/article/7098955814320587300/)
 - [X86，你了解多少？](https://www.toutiao.com/i6946365448938127904/)
+- [深入理解MCU启动原理](https://www.toutiao.com/article/7282659068987113999/)
 - [一则轶事：对更快的系统调用陷阱的追求](https://www.toutiao.com/i7056937402165674507/)
 - [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
