@@ -72,6 +72,8 @@
 - [Multiplexer \(MUX\)](https://en.wikichip.org/wiki/multiplexer)
 - [MUX多路选择器（Multiplexer）](https://zhuanlan.zhihu.com/p/639316069)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
+- [寄存器 SRAM DRAM存储单元区别](https://blog.csdn.net/qq_45683435/article/details/103179091)
+- [寄存器，SRAM, DRAM, 熔丝OTP，EPROM，EEPROM简介](https://zhuanlan.zhihu.com/p/463610694)
 - [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
 - [从一辆小车开始你的机器人爱好之旅（上）](https://www.toutiao.com/a6818401220323967500/)
