@@ -38,6 +38,7 @@
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [malloc 背后的虚拟内存 和 malloc实现原理](https://www.toutiao.com/article/7249649334319448628/)
 - [ARMv8 内存系统学习笔记](https://www.toutiao.com/article/7275141440156582452/)
+- [AMD/Intel/Nvidia加速推进Resizable BAR落地 游戏性能提升5-10%](https://www.toutiao.com/i6928553413164663309/)
 - [圖解RAM結構與原理，系統記憶體的Channel、Chip與Bank](https://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand?fbclid=IwAR0yj1dCTZmi0FpYLDV6BfwEj11iVtLMtIHq1bdep7CtH9V6YzFhliU6tK4)
 - [1.3：从芯片说起~自己动手做RAM](https://www.toutiao.com/i7049233754413400579/)
 - [1.4：从芯片说起~自己动手做ALU](https://www.toutiao.com/i7050281617067147806/)
