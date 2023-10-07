@@ -90,6 +90,7 @@
 - [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
+- [FPGA学习-边沿检测技术，通过边沿采样技术实现上升沿捕获](https://www.toutiao.com/article/7287039457591804471/)
 - [扇出型封装结构可靠性试验方法及验证](https://www.toutiao.com/article/7284401507255042600/)
 - [FPGA开发设计中常用XILINX IP CORE的使用与仿真](https://www.toutiao.com/article/7284069288716108307/)
 
