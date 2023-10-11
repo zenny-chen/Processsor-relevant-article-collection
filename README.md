@@ -22,6 +22,7 @@
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
 - [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 - [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
+- [Memory Footprints](https://www.pcmag.com/encyclopedia/term/memory-footprint)
 - [彻底搞懂 IO 底层原理](https://www.toutiao.com/i6901537900752585228/)
 - [CPU 伪共享是如何发生的？又该如何避免？](https://www.toutiao.com/article/7268439651449405986/)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
@@ -89,10 +90,12 @@
 - [PCB 盘中孔是什么？PCB盘中孔工艺流程总结，图文结合，轻松搞定](https://www.toutiao.com/article/7259672991431475768/)
 - [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
+- [基于IP核的FPGA设计方法是什么？](https://www.toutiao.com/article/7288630114198405693/)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [FPGA学习-边沿检测技术，通过边沿采样技术实现上升沿捕获](https://www.toutiao.com/article/7287039457591804471/)
 - [扇出型封装结构可靠性试验方法及验证](https://www.toutiao.com/article/7284401507255042600/)
 - [FPGA开发设计中常用XILINX IP CORE的使用与仿真](https://www.toutiao.com/article/7284069288716108307/)
+- [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
 
 <br />
 
