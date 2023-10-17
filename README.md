@@ -14,6 +14,7 @@
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
 - [Apple M1 Max功耗分析与探讨](https://mp.weixin.qq.com/s?__biz=MzUyMTg4NzUwMA==&mid=2247483675&idx=1&sn=5861ba23437b81e97a05863276c72a05)
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
+- [Open-source, multi-ISA binary-translation.](https://binary-translation-alliance.org/)
 - [一篇详解ARM Cortex-A9处理器相关介绍](https://www.toutiao.com/article/7098955814320587300/)
 - [X86，你了解多少？](https://www.toutiao.com/i6946365448938127904/)
 - [深入理解MCU启动原理](https://www.toutiao.com/article/7282659068987113999/)
@@ -110,6 +111,7 @@
 - [我们一起学RISC-V——01-了解处理器和寄存器](https://www.toutiao.com/a6904491425560281604/)
 - [我们一起学RISC-V——02-深入了解机器模式下的CSR](https://www.toutiao.com/a6905393723081867780/)
 - [我们一起学RISC-V——03-特权指令，Reset和NMI](https://www.toutiao.com/a6905768922071564804/)
+- [RISC-V Open Source Supervisor Binary Interface \(OpenSBI\)](https://github.com/riscv-software-src/opensbi)
 
 <br />
 
