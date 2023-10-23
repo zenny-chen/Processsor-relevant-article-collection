@@ -11,6 +11,7 @@
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
 - [DSA AI芯片，相对于GPGPU，究竟有多大的能效优势？主要是从哪些方面提高了能效？](https://zhuanlan.zhihu.com/p/457265026)
+- [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
 - [Apple M1 Max功耗分析与探讨](https://mp.weixin.qq.com/s?__biz=MzUyMTg4NzUwMA==&mid=2247483675&idx=1&sn=5861ba23437b81e97a05863276c72a05)
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
