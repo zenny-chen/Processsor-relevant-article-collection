@@ -100,6 +100,7 @@
 - [扇出型封装结构可靠性试验方法及验证](https://www.toutiao.com/article/7284401507255042600/)
 - [FPGA开发设计中常用XILINX IP CORE的使用与仿真](https://www.toutiao.com/article/7284069288716108307/)
 - [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
+- [边沿检测电路分析](https://www.toutiao.com/w/1780953700443136/)
 
 <br />
 
