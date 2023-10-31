@@ -93,14 +93,15 @@
 - [PCB 盘中孔是什么？PCB盘中孔工艺流程总结，图文结合，轻松搞定](https://www.toutiao.com/article/7259672991431475768/)
 - [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 - [漫画版电路，电路板都生动了起来](https://www.toutiao.com/article/7291477143354196538/)
+- [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
+- [边沿检测电路分析](https://www.toutiao.com/w/1780953700443136/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 - [基于IP核的FPGA设计方法是什么？](https://www.toutiao.com/article/7288630114198405693/)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [FPGA学习-边沿检测技术，通过边沿采样技术实现上升沿捕获](https://www.toutiao.com/article/7287039457591804471/)
 - [扇出型封装结构可靠性试验方法及验证](https://www.toutiao.com/article/7284401507255042600/)
 - [FPGA开发设计中常用XILINX IP CORE的使用与仿真](https://www.toutiao.com/article/7284069288716108307/)
-- [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
-- [边沿检测电路分析](https://www.toutiao.com/w/1780953700443136/)
+- [模拟IC设计原理图：逻辑电路是如何通过MOS管实现的](https://www.toutiao.com/article/7295652874917528098/)
 
 <br />
 
