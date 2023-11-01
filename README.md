@@ -94,6 +94,7 @@
 - [花30元，做了个可编程电流表，精度高，功能全！解析一下电路原理](https://www.toutiao.com/article/7278599994838401595/)
 - [漫画版电路，电路板都生动了起来](https://www.toutiao.com/article/7291477143354196538/)
 - [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
+- [20个电路能懂5个以上，足以证明你在电子行业混过！](https://www.toutiao.com/w/1781317639211017/)
 - [边沿检测电路分析](https://www.toutiao.com/w/1780953700443136/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 - [基于IP核的FPGA设计方法是什么？](https://www.toutiao.com/article/7288630114198405693/)
