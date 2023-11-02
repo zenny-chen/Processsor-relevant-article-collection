@@ -37,6 +37,7 @@
 - [Understanding write-through, write-around and write-back caching (with Python)](https://shahriar.svbtle.com/Understanding-writethrough-writearound-and-writeback-caching-with-python)
 - [深入理解cache对写好代码至关重要](https://www.bilibili.com/read/cv24462455/)
 - [cache中的invalidate和clean](https://zhuanlan.zhihu.com/p/515450647)
+- [TLB: Translation-lookaside buffer](http://www.biscuitos.cn/blog/TLB/)
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [malloc 背后的虚拟内存 和 malloc实现原理](https://www.toutiao.com/article/7249649334319448628/)
 - [ARMv8 内存系统学习笔记](https://www.toutiao.com/article/7275141440156582452/)
