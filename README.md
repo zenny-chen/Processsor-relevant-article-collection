@@ -20,7 +20,6 @@
 - [X86，你了解多少？](https://www.toutiao.com/i6946365448938127904/)
 - [深入理解MCU启动原理](https://www.toutiao.com/article/7282659068987113999/)
 - [一则轶事：对更快的系统调用陷阱的追求](https://www.toutiao.com/i7056937402165674507/)
-- [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
 - [性能之殇：从冯·诺依曼瓶颈谈起](https://zhuanlan.zhihu.com/p/52721155)
 - [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
@@ -106,7 +105,7 @@
 
 <br />
 
-## RISC-V相关资料
+## RISC-V 相关资料
 
 - [RISC-V并不完美？](https://www.toutiao.com/i6903448502840459779/)
 - [浅谈RISC-V指令集的基本指令格式和立即数操作](https://www.toutiao.com/i6731643373674824204/?group_id=6731643373674824204)
@@ -121,7 +120,7 @@
 
 <br />
 
-## ARM处理器相关资料
+## ARM 处理器相关资料
 
 - [ARMv8 - ARM](https://en.wikichip.org/wiki/arm/armv8)
 - [arm/armv8.1](https://en.wikichip.org/wiki/arm/armv8.1)
@@ -132,6 +131,14 @@
 - [Emulating x86 AES Intrinsics on ARMv8-A](https://blog.michaelbrase.com/2018/05/08/emulating-x86-aes-intrinsics-on-armv8-a/)
 - [ARM MTE简介（Memory Tagging Extension）](https://www.toutiao.com/article/7120105520144482820/)
 - A good implementation for instruction Cache flush operation from [Dolphin](https://github.com/dolphin-emu/dolphin), contributed by the Mono project. See **`FlushIcache`** and **`FlushIcacheSection`** in [**Arm64Emitter.cpp**](https://github.com/dolphin-emu/dolphin/blob/098e2b3628fbb240ffd6c8124ee8cd729a522798/Source/Core/Common/Arm64Emitter.cpp)
+
+<br />
+
+## Intel 处理器相关资料
+
+- [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
+- [Code Sample: Intel® Deep Learning Boost New Deep Learning Instruction bfloat16 - Intrinsic Functions](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)
+- [Tuning Guide for Deep Learning with Intel® AVX512 and Intel® Deep Learning Boost on 3rd Generation Intel® Xeon® Scalable Processors](https://www.intel.com/content/www/us/en/developer/articles/guide/deep-learning-with-avx512-and-dl-boost.html)
 
 <br />
 
