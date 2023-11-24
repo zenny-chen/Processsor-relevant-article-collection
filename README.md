@@ -96,6 +96,7 @@
 - [20种运放典型电路大全，总有一个用得上！](https://www.toutiao.com/article/7287172900066132537/)
 - [20个电路能懂5个以上，足以证明你在电子行业混过！](https://www.toutiao.com/w/1781317639211017/)
 - [边沿检测电路分析](https://www.toutiao.com/w/1780953700443136/)
+- [电路中的GND，它的本质是什么？](https://www.toutiao.com/article/7303840126365729306/)
 - [SystemC Tutorial](http://www.asic-world.com/systemc/tutorial.html)
 - [基于IP核的FPGA设计方法是什么？](https://www.toutiao.com/article/7288630114198405693/)
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
