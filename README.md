@@ -137,6 +137,7 @@
 - [Emulating x86 AES Intrinsics on ARMv8-A](https://blog.michaelbrase.com/2018/05/08/emulating-x86-aes-intrinsics-on-armv8-a/)
 - [ARM MTE简介（Memory Tagging Extension）](https://www.toutiao.com/article/7120105520144482820/)
 - [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
+- Query SVE Vector Length: [From Arm NEON to SVE](https://learn.arm.com/learning-paths/servers-and-cloud-computing/sve/sve_basics/)
 - A good implementation for instruction Cache flush operation from [Dolphin](https://github.com/dolphin-emu/dolphin), contributed by the Mono project. See **`FlushIcache`** and **`FlushIcacheSection`** in [**Arm64Emitter.cpp**](https://github.com/dolphin-emu/dolphin/blob/098e2b3628fbb240ffd6c8124ee8cd729a522798/Source/Core/Common/Arm64Emitter.cpp)
 
 <br />
