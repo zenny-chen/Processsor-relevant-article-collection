@@ -132,9 +132,11 @@
 - [Memory tagging extension (MTE, MemTag, ARMv8.5-MemTag)](https://en.wikichip.org/wiki/arm/mte)
 - [Bringing Armv8.2 Instructions to Android Runtime](https://community.arm.com/developer/tools-software/oss-platforms/b/android-blog/posts/bringing-armv8-2-instructions-to-android-runtime)
 - [ARM ISA Intrinsics](https://developer.arm.com/architectures/instruction-sets/intrinsics/)
+- [Introduction to SVE](https://developer.arm.com/documentation/102476/0100)
 - [干货：ARM架构代码移植实战分享](https://toutiao.io/posts/ay0cuht/preview)  请使用 **`crc32cb`**、**`crc32ch`**、**`crc32cw`**、**`crc32cx`** 取代x86的 **CRC32** 系列汇编指令，替换方法如表所示，并在编译时添加编译参数 **`-mcpu=generic+crc`**
 - [Emulating x86 AES Intrinsics on ARMv8-A](https://blog.michaelbrase.com/2018/05/08/emulating-x86-aes-intrinsics-on-armv8-a/)
 - [ARM MTE简介（Memory Tagging Extension）](https://www.toutiao.com/article/7120105520144482820/)
+- [ARM’s Scalable Vector Extensions: A Critical Look at SVE2 For Integer Workloads](https://gist.github.com/zingaburga/805669eb891c820bd220418ee3f0d6bd)
 - A good implementation for instruction Cache flush operation from [Dolphin](https://github.com/dolphin-emu/dolphin), contributed by the Mono project. See **`FlushIcache`** and **`FlushIcacheSection`** in [**Arm64Emitter.cpp**](https://github.com/dolphin-emu/dolphin/blob/098e2b3628fbb240ffd6c8124ee8cd729a522798/Source/Core/Common/Arm64Emitter.cpp)
 
 <br />
