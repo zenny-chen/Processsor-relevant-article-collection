@@ -86,6 +86,7 @@
 - [Xilinx BRAM IP介绍](https://blog.csdn.net/qq_40268672/article/details/124510822)
 - [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
+- [三维动画讲解，芯片是如何制造的，几百亿个晶体管是怎么安装的](https://www.toutiao.com/video/7370252335542764069/)
 - [从一辆小车开始你的机器人爱好之旅（上）](https://www.toutiao.com/a6818401220323967500/)
 - [ESP32 Xtensa\(HIFI4/HIFI5\) 处理器架构总结](https://blog.csdn.net/tugouxp/article/details/113816681)
 - [Intel微处理器Uncore架构简介](https://mp.weixin.qq.com/s?__biz=MzU4MDgyNTAyMw==&mid=2247486682&idx=1&sn=08ebf6afba89b77a821c4cee53a4d382)
