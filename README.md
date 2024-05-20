@@ -63,6 +63,7 @@
 - [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [干货分享之ESXi CPU调度机制和原理](https://www.toutiao.com/article/7245537321754378786/)
 - [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
+- [QEMU KVM学习笔记](https://github.com/yifengyou/learn-kvm)
 - [英特尔漏洞门原理解析，保护模式是如何失效的？](https://www.toutiao.com/i6509335383929520648/)
 - [走进栈溢出](https://blog.csdn.net/weixin_41185953/article/details/104855669)
 - [初探ROP](https://blog.csdn.net/weixin_41185953/article/details/104901494)
