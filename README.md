@@ -80,6 +80,7 @@
 - [Multiplexer \(MUX\)](https://en.wikichip.org/wiki/multiplexer)
 - [MUX多路选择器（Multiplexer）](https://zhuanlan.zhihu.com/p/639316069)
 - [多路分配器（解复用器）Demultiplexer 的类型分析](https://blog.csdn.net/qq_41657005/article/details/119743210)
+- [锁存器Latch和触发器Flip-flop的区别](https://blog.csdn.net/edward_zcl/article/details/89248916)
 - [基于忆阻器的存算一体单芯片算力可能高达1POPs](https://www.leiphone.com/news/202008/SHclogrCqLGhkaWb.html)
 - [寄存器 SRAM DRAM存储单元区别](https://blog.csdn.net/qq_45683435/article/details/103179091)
 - [寄存器，SRAM, DRAM, 熔丝OTP，EPROM，EEPROM简介](https://zhuanlan.zhihu.com/p/463610694)
