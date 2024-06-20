@@ -71,6 +71,7 @@
 - [初探ROP](https://blog.csdn.net/weixin_41185953/article/details/104901494)
 - [再探ROP(上)](https://blog.csdn.net/weixin_41185953/article/details/105364797)
 - [初探利用angr进行漏洞挖掘（上）](https://www.toutiao.com/a6800737709552828942/)
+- [成功率95%以上，Arm TIKTAG推测执行攻击曝光：影响Linux/Chrome](https://www.toutiao.com/article/7381726763715510794/)
 - [一个基于汇编的中心重定向框架](https://mp.weixin.qq.com/s?__biz=MzA5NzMwODI0MA==&mid=2647766644&idx=1&sn=134c8defba961c7573595bf7b2161bc6)
 - [干货！嵌入式系统“四个地址”，划重点！](https://haokan.baidu.com/v?pd=wisenatural&vid=15776113190438521718)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
