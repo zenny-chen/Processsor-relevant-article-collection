@@ -91,6 +91,7 @@
 - [一文读懂DDR内存基础知识](https://mp.weixin.qq.com/s?__biz=MzIwNTUxNDgwNg==&mid=2247491063&idx=1&sn=ef190fc63e99ca9895a287a67a70833a)
 - [GDDR7大战：谁将成为下一代显卡霸主？](https://www.toutiao.com/article/7379192064849822243/)
 - [Xilinx BRAM IP介绍](https://blog.csdn.net/qq_40268672/article/details/124510822)
+- [DRAMsim3](https://github.com/umd-memsys/DRAMsim3)
 - [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
 - [三维动画讲解，芯片是如何制造的，几百亿个晶体管是怎么安装的](https://www.toutiao.com/video/7370252335542764069/)
