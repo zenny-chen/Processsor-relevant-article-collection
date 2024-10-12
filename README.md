@@ -13,6 +13,7 @@
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
 - [AI实验室：CPU、GPU、TPU 和 NPU的发展历程和区别](https://zhuanlan.zhihu.com/p/670414115)（其中有对“**脉动**”的介绍：“脉动阵列,有时候也叫做脉动架构, 英文名 ***Systolic Array***”）
 - [DSA AI芯片，相对于GPGPU，究竟有多大的能效优势？主要是从哪些方面提高了能效？](https://zhuanlan.zhihu.com/p/457265026)
+- [An in-depth look at Google’s first Tensor Processing Unit (TPU)](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [初创芯片企业篇：Tenstorrent的产品与技术](https://mp.weixin.qq.com/s?__biz=MzI0MTQ3NTM0OA==&mid=2247489645&idx=2&sn=534971e4c77d91ede5191f5ec7f63a4b)
