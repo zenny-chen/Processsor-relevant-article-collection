@@ -31,6 +31,8 @@
 - [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
 - [Memory Footprints](https://www.pcmag.com/encyclopedia/term/memory-footprint)
 - [彻底搞懂 IO 底层原理](https://www.toutiao.com/i6901537900752585228/)
+- [彻底搞懂虚拟内存，虚拟地址，虚拟地址空间](https://www.toutiao.com/article/6952760982372385317/)
+- [虚拟地址翻译物理地址的流程终于搞懂了~](https://mp.weixin.qq.com/s/Sn6VzXIxmPWlbHu5k2tvaQ)
 - [CPU 伪共享是如何发生的？又该如何避免？](https://www.toutiao.com/article/7268439651449405986/)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 - [访问任意数组元素的性能相同？抛开Cache谈性能就是耍流氓](https://www.toutiao.com/a6821051726448034315/)
