@@ -190,3 +190,35 @@
 - [HiFi 2 Audio Engine Instruction Set Architecture Reference Manua](https://wenku.baidu.com/view/3a9e44c3d5bbfd0a7956735c.html)
 - [Cadence HiFi 3 DSP User Manual Page](https://www.manualslib.com/manual/1484529/Cadence-Hifi-3-Dsp.html)
 
+<br />
+
+## How does an operating system allocate physical memory and map it to the memory page?
+
+An operating system (OS) allocates physical memory and maps it to memory pages using a process called "paging." Here's a simplified explanation of how it works:
+
+### Memory Allocation and Paging Process
+
+1. **Virtual Memory**: 
+   - Each process running on an OS is given its own virtual memory space. This is an abstraction that makes it appear as if each process has access to a large, continuous block of memory, independent of other processes.
+
+2. **Page Tables**: 
+   - The OS maintains page tables for each process. A page table is a data structure used to map virtual addresses to physical addresses. It contains entries that translate virtual page numbers to physical frame numbers.
+
+3. **Page Size**: 
+   - Memory is divided into fixed-size blocks called pages (commonly 4KB each). Correspondingly, physical memory is divided into page frames, which are blocks of the same size as the pages.
+
+4. **Page Allocation**: 
+   - When a process needs memory, the OS allocates a certain number of pages. The OS then maps these virtual pages to physical page frames in RAM using the page table.
+
+5. **Page Fault Handling**: 
+   - If a process tries to access a page that is not currently mapped to a physical frame (a "page fault"), the OS will handle this by either allocating a new physical frame or bringing the required page from disk (swap space) into physical memory.
+
+6. **Physical Memory Management**: 
+   - The OS keeps track of free and used physical memory using data structures like free lists or bitmaps. When a page frame is no longer needed, it is marked as free and can be allocated to other processes.
+
+7. **TLB (Translation Lookaside Buffer)**: 
+   - To speed up the translation of virtual addresses to physical addresses, modern CPUs use a special cache called the TLB. The TLB stores recent page table entries to reduce the number of memory accesses needed for address translation.
+
+### Simplified Example
+Imagine the OS has a process that needs 12KB of memory. With a page size of 4KB, this would require three pages. The OS allocates three physical page frames from RAM and updates the page table of the process to map the virtual pages to these physical frames. When the process accesses memory, the virtual addresses are translated to physical addresses using the page table entries.
+
