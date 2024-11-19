@@ -49,6 +49,7 @@
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [彻底搞懂虚拟内存，虚拟地址，虚拟地址空间](https://www.toutiao.com/article/6952760982372385317/)
 - [虚拟地址翻译物理地址的流程终于搞懂了~](https://mp.weixin.qq.com/s/Sn6VzXIxmPWlbHu5k2tvaQ)
+- [从内核小白到大神——图形驱动基础](https://zhuanlan.zhihu.com/p/555899819)
 - [malloc 背后的虚拟内存 和 malloc实现原理](https://www.toutiao.com/article/7249649334319448628/)
 - [ARMv8 内存系统学习笔记](https://www.toutiao.com/article/7275141440156582452/)
 - [AMD/Intel/Nvidia加速推进Resizable BAR落地 游戏性能提升5-10%](https://www.toutiao.com/i6928553413164663309/)
