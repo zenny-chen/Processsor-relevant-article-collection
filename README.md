@@ -168,6 +168,7 @@
 - [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
 - [Code Sample: Intel® Deep Learning Boost New Deep Learning Instruction bfloat16 - Intrinsic Functions](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)
 - [Tuning Guide for Deep Learning with Intel® AVX512 and Intel® Deep Learning Boost on 3rd Generation Intel® Xeon® Scalable Processors](https://www.intel.com/content/www/us/en/developer/articles/guide/deep-learning-with-avx512-and-dl-boost.html)
+- [Intel ADX](https://wikimili.com/en/Intel_ADX)
 
 <br />
 
