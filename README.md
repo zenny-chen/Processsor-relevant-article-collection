@@ -170,6 +170,7 @@
 - [Code Sample: Intel® Deep Learning Boost New Deep Learning Instruction bfloat16 - Intrinsic Functions](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)
 - [Tuning Guide for Deep Learning with Intel® AVX512 and Intel® Deep Learning Boost on 3rd Generation Intel® Xeon® Scalable Processors](https://www.intel.com/content/www/us/en/developer/articles/guide/deep-learning-with-avx512-and-dl-boost.html)
 - [x86指令编码简述(机器码)](https://blog.csdn.net/xiao__1bai/article/details/126584837)
+- [X86 CPU的EFLAGS寄存器各个标识位](https://blog.csdn.net/jiary5201314/article/details/8487981)
 - [Intel ADX](https://wikimili.com/en/Intel_ADX)
 
 <br />
