@@ -143,6 +143,8 @@
 - [我们一起学RISC-V——02-深入了解机器模式下的CSR](https://www.toutiao.com/a6905393723081867780/)
 - [我们一起学RISC-V——03-特权指令，Reset和NMI](https://www.toutiao.com/a6905768922071564804/)
 - [RISC-V Open Source Supervisor Binary Interface \(OpenSBI\)](https://github.com/riscv-software-src/opensbi)
+- [中国芯片产业的一次底层突围，AI芯片创企勇挑RISC-V标准制定大梁](https://mp.weixin.qq.com/s?__biz=MjM5NTM4MTUyMg==&mid=2447909291&idx=1&sn=f613d97cd86a81342dce1605bcb3a1ee)
+- [RISC-V Matrix Project](https://github.com/riscv-stc/riscv-matrix-project)
 
 <br />
 
