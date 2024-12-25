@@ -172,7 +172,7 @@
 - [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
 - [Code Sample: Intel® Deep Learning Boost New Deep Learning Instruction bfloat16 - Intrinsic Functions](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)
 - [Tuning Guide for Deep Learning with Intel® AVX512 and Intel® Deep Learning Boost on 3rd Generation Intel® Xeon® Scalable Processors](https://www.intel.com/content/www/us/en/developer/articles/guide/deep-learning-with-avx512-and-dl-boost.html)
-- [x86指令编码简述(机器码)](https://blog.csdn.net/xiao__1bai/article/details/126584837)
+- [x86指令编码简述(机器码)](https://blog.csdn.net/xiao__1bai/article/details/126584837)（关于 **ModR/M** 可详细参考 vol2 文档，关于 **67H**、**66H** 这些前缀的详细情况，可搜索 vol1 文档。**ModR/M** 的组合顺序从高位到低位依次为：**Mod**，**REG =**，**R/M**；而 **SIB Byte** 的组合顺序从高位到低位依次为：**SS**，**Index**，**Base =**。）
 - [X86 CPU的EFLAGS寄存器各个标识位](https://blog.csdn.net/jiary5201314/article/details/8487981)
 - [Intel ADX](https://wikimili.com/en/Intel_ADX)
 
