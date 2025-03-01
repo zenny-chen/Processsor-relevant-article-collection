@@ -24,6 +24,7 @@
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
 - [Apple M1 Max功耗分析与探讨](https://mp.weixin.qq.com/s?__biz=MzUyMTg4NzUwMA==&mid=2247483675&idx=1&sn=5861ba23437b81e97a05863276c72a05)
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
+- [The Qualcomm Snapdragon X Architecture Deep Dive: Getting To Know Oryon and Adreno X1](https://www.anandtech.com/show/21445/qualcomm-snapdragon-x-architecture-deep-dive)
 - [Open-source, multi-ISA binary-translation.](https://binary-translation-alliance.org/)
 - [一篇详解ARM Cortex-A9处理器相关介绍](https://www.toutiao.com/article/7098955814320587300/)
 - [X86，你了解多少？](https://www.toutiao.com/i6946365448938127904/)
