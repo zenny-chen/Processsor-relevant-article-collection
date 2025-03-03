@@ -21,6 +21,7 @@
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [初创芯片企业篇：Tenstorrent的产品与技术](https://mp.weixin.qq.com/s?__biz=MzI0MTQ3NTM0OA==&mid=2247489645&idx=2&sn=534971e4c77d91ede5191f5ec7f63a4b)
 - [未来芯片或将走向神经拟态计算](https://www.toutiao.com/article/7429655519792480808/)
+- [非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI](https://www.toutiao.com/i6576794835460555267)
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
 - [Apple M1 Max功耗分析与探讨](https://mp.weixin.qq.com/s?__biz=MzUyMTg4NzUwMA==&mid=2247483675&idx=1&sn=5861ba23437b81e97a05863276c72a05)
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
