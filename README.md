@@ -20,6 +20,8 @@
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [初创芯片企业篇：Tenstorrent的产品与技术](https://mp.weixin.qq.com/s?__biz=MzI0MTQ3NTM0OA==&mid=2247489645&idx=2&sn=534971e4c77d91ede5191f5ec7f63a4b)
+- [Tenstorrent Wormhole Analysis – A Scale Out Architecture for Machine Learning That Could Put Nvidia On Their Back Foot](https://semianalysis.com/2021/06/25/tenstorrent-wormhole-analysis-a-scale/)
+- [Memory on Tenstorrent](https://clehaxze.tw/gemlog/2025/03-17-memory-on-tenstorrent.gmi)
 - [未来芯片或将走向神经拟态计算](https://www.toutiao.com/article/7429655519792480808/)
 - [非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI](https://www.toutiao.com/i6576794835460555267)
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
