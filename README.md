@@ -10,6 +10,7 @@
 - [为什么单颗裸芯被称为die?](https://www.toutiao.com/article/7327482006542484020/)
 - [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
 - [学习笔记丨《图解系统》](https://www.toutiao.com/article/7279780057982206479/)
+- [48年前的传奇代码重现！微软开源6955行比尔·盖茨联合开发的BASIC解释器，首日狂揽1.5k Star](https://mp.weixin.qq.com/s?__biz=MzA5ODUxOTA5Mg==&mid=2652605541&idx=1&sn=664e8c06fbdef92c1b10c52a8dd6b5d2)
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
 - [收藏：AI芯片基础知识（2025）](https://mp.weixin.qq.com/s/YoJHG8j9N_xDV3JT7fqFYQ)
