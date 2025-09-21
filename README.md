@@ -16,6 +16,7 @@
 - [收藏：AI芯片基础知识（2025）](https://mp.weixin.qq.com/s/YoJHG8j9N_xDV3JT7fqFYQ)
 - [一颗新芯片，颠覆CPU和GPU](https://www.toutiao.com/article/7431581160754446863/)
 - [AI实验室：CPU、GPU、TPU 和 NPU的发展历程和区别](https://zhuanlan.zhihu.com/p/670414115)（其中有对“**脉动**”的介绍：“脉动阵列,有时候也叫做脉动架构, 英文名 ***Systolic Array***”）
+- [智图事 | 90%的人都混淆的NPU与GPU！一篇看懂核心差异。拒绝浅层解读，看完直呼通透！](https://mp.weixin.qq.com/s?__biz=MzU3OTYzODUyMQ==&mid=2247484354&idx=1&sn=015f763d91c53a3646f8b895b7749e0a)
 - [DSA AI芯片，相对于GPGPU，究竟有多大的能效优势？主要是从哪些方面提高了能效？](https://zhuanlan.zhihu.com/p/457265026)
 - [An in-depth look at Google’s first Tensor Processing Unit (TPU)](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
