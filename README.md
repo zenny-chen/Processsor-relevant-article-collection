@@ -169,6 +169,8 @@
 - [ARM ISA Intrinsics](https://developer.arm.com/architectures/instruction-sets/intrinsics/)
 - [Introduction to SVE](https://developer.arm.com/documentation/102476/0100)
 - [Introducing the Scalable Matrix Extension for the Armv9-A Architecture](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/scalable-matrix-extension-armv9-a-architecture)
+- [The Scalable Matrix Extension (SME), for Armv9-A -- Arm Architecture Reference Manual Supplement](https://developer.arm.com/documentation/ddi0616/latest/)
+- [A64 -- SME Instructions](https://developer.arm.com/documentation/ddi0602/2023-12/SME-Instructions?lang=en)
 - [干货：ARM架构代码移植实战分享](https://toutiao.io/posts/ay0cuht/preview)  请使用 **`crc32cb`**、**`crc32ch`**、**`crc32cw`**、**`crc32cx`** 取代x86的 **CRC32** 系列汇编指令，替换方法如表所示，并在编译时添加编译参数 **`-mcpu=generic+crc`**
 - [Emulating x86 AES Intrinsics on ARMv8-A](https://blog.michaelbrase.com/2018/05/08/emulating-x86-aes-intrinsics-on-armv8-a/)
 - [ARM MTE简介（Memory Tagging Extension）](https://www.toutiao.com/article/7120105520144482820/)
