@@ -100,6 +100,7 @@
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [ARM ACE 和 ACE-LITE 的含义](https://www.cnblogs.com/linhaostudy/p/18513214)
 - [一文读懂GPU 通信之PCIe](https://mp.weixin.qq.com/s?__biz=MzkwOTU5ODU3MQ==&mid=2247484481&idx=1&sn=cc5fdc95152804142ad3d84a5f217e2c)
+- [基于统一协议CPU芯片高速互联Infinity Fabric的研究 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484037&idx=1&sn=0a70c0dbe87fcef3bd5254df0b3dcc97)
 - [基于NoC的多处理器系统； NoC的基本结构和原理；Router；网络接口；流量控制机制；高速缓存一致性；Network on chip 片上网络； Multi-Processor System](https://blog.csdn.net/qq_43858116/article/details/131178351)
 - [GPMC并口如何实现“小数据-低时延，大数据-高带宽”](https://www.toutiao.com/article/7284641738500178495/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
