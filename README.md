@@ -64,6 +64,7 @@
 - [内存系列学习（一）：万字长文带你搞定MMU&TLB&TWU](https://zhuanlan.zhihu.com/p/650956048)
 - [malloc 背后的虚拟内存 和 malloc实现原理](https://www.toutiao.com/article/7249649334319448628/)
 - [ARMv8 内存系统学习笔记](https://www.toutiao.com/article/7275141440156582452/)
+- [从硬件到软件：ARM SMMU全栈技术解析](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493841&idx=1&sn=1ccee7294601ba644f03145ba4e5a14a)
 - [AMD/Intel/Nvidia加速推进Resizable BAR落地 游戏性能提升5-10%](https://www.toutiao.com/i6928553413164663309/)
 - [圖解RAM結構與原理，系統記憶體的Channel、Chip與Bank](https://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand?fbclid=IwAR0yj1dCTZmi0FpYLDV6BfwEj11iVtLMtIHq1bdep7CtH9V6YzFhliU6tK4)
 - [Content-addressable memory (**CAM**)](https://en.wikipedia.org/wiki/Content-addressable_memory)
