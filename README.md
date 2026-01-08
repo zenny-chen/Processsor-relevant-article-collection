@@ -13,7 +13,7 @@
 - [48年前的传奇代码重现！微软开源6955行比尔·盖茨联合开发的BASIC解释器，首日狂揽1.5k Star](https://mp.weixin.qq.com/s?__biz=MzA5ODUxOTA5Mg==&mid=2652605541&idx=1&sn=664e8c06fbdef92c1b10c52a8dd6b5d2)
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
-- [Camera ISP图像处理揭密（阶段一：BPS）](https://mp.weixin.qq.com/s?__biz=MzUyMzkzNzQwMQ==&mid=2247484183&idx=1&sn=a0b4883ee412338b0f6418bd1e514283)
+- [Camera ISP图像处理揭密（阶段二：IFE）](https://mp.weixin.qq.com/s?__biz=MzUyMzkzNzQwMQ==&mid=2247484230&idx=1&sn=a83ee3e124ca43179f324ce771e5d400)
 - [收藏：AI芯片基础知识（2025）](https://mp.weixin.qq.com/s/YoJHG8j9N_xDV3JT7fqFYQ)
 - [一颗新芯片，颠覆CPU和GPU](https://www.toutiao.com/article/7431581160754446863/)
 - [AI实验室：CPU、GPU、TPU 和 NPU的发展历程和区别](https://zhuanlan.zhihu.com/p/670414115)（其中有对“**脉动**”的介绍：“脉动阵列,有时候也叫做脉动架构, 英文名 ***Systolic Array***”）
