@@ -123,6 +123,7 @@
 - [Xilinx BRAM IP介绍](https://blog.csdn.net/qq_40268672/article/details/124510822)
 - [DRAMsim3](https://github.com/umd-memsys/DRAMsim3)（本仓库的 **docs** 目录中有附带的相关文档）
 - [AI时代炙手可热的香饽饽，科技巨头都在抢的 **HBM** 到底是什么？](https://www.toutiao.com/article/7272308855969792531/)
+- [3D RAM主流/Roadmap方案以及AI部署存储选型策论](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484637&idx=1&sn=aef191416d7492b3ebecf3ebb87e2428)
 - [3D动画揭秘CPU是如何工作的](https://www.toutiao.com/video/7258212224236421647/)
 - [3D动画揭秘电脑内存的详细工作原理](https://www.toutiao.com/video/7260069050078724643/)
 - [三维动画讲解，芯片是如何制造的，几百亿个晶体管是怎么安装的](https://www.toutiao.com/video/7370252335542764069/)
