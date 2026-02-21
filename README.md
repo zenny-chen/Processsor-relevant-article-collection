@@ -103,6 +103,7 @@
 - [AMBA_AXI总线详解](https://www.toutiao.com/i7048938792522105380/)
 - [ARM ACE 和 ACE-LITE 的含义](https://www.cnblogs.com/linhaostudy/p/18513214)
 - [一文读懂GPU 通信之PCIe](https://mp.weixin.qq.com/s?__biz=MzkwOTU5ODU3MQ==&mid=2247484481&idx=1&sn=cc5fdc95152804142ad3d84a5f217e2c)
+- [GPU服务器中的PCIe与NUMA性能优化](https://mp.weixin.qq.com/s?__biz=Mzk2NDEyMTM1Mg==&mid=2247488336&idx=1&sn=5e9d17bf69fb300563958414fdc097d5)
 - [FPGA漫谈PCI-E：TLP包](https://mp.weixin.qq.com/s?__biz=Mzg2MDgxMTE1Nw==&mid=2247487523&idx=1&sn=3807a50f0579229957419e17ba372021)
 - [PCIe 错误处理机制及其软件实现 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484436&idx=1&sn=37dfa9cf6c3fa137c31168c853b6d992)
 - [CXL: 内存一致性及软件流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484787&idx=1&sn=0572446aa4d6770f50179090e36e658b)
