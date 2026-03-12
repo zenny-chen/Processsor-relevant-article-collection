@@ -42,6 +42,7 @@
 - [面试官问：高并发下，你都怎么选择最优的线程数？](https://www.toutiao.com/a6829183334719947277/)
 - [Memory Footprints](https://www.pcmag.com/encyclopedia/term/memory-footprint)
 - [彻底搞懂 IO 底层原理](https://www.toutiao.com/i6901537900752585228/)
+- [经典重温：AMD 323页PPT介绍IOMMU](https://mp.weixin.qq.com/s?__biz=Mzg5NTAwNDY1Mw==&mid=2247486831&idx=1&sn=76f815ec1c80c5f398c7df4339e06e41)
 - [IOMMU功能测试软件设计及实现 (二)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484389&idx=1&sn=53e3372b92a05f9b075e59faaefb08e0)
 - [CPU 伪共享是如何发生的？又该如何避免？](https://www.toutiao.com/article/7268439651449405986/)
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
