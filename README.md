@@ -81,6 +81,7 @@
 - [DirectStorage is coming to PC](https://devblogs.microsoft.com/directx/directstorage-is-coming-to-pc/)
 - [极致优化 SSD 并行读调度](https://www.toutiao.com/article/7278486952729444918/)
 - [Microsoft NUMA Support](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
+- [memory: NUMA firmware (bios)的设置及初始化流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247485032&idx=1&sn=1675813ad147074c5a4353a22c715ebe)
 - [AMD Rome – is it for real? Architecture and initial HPC performance](https://www.dell.com/support/article/zh-cn/sln319015/amd-rome-is-it-for-real-architecture-and-initial-hpc-performance)
 - [线程模型Reactor/Proactor的区别](https://www.toutiao.com/i6902028903288717835/)
 - [GPFS并行文件系统原理解析](https://www.toutiao.com/i6902319855127609867/)
