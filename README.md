@@ -28,6 +28,7 @@
 - [未来芯片或将走向神经拟态计算](https://www.toutiao.com/article/7429655519792480808/)
 - [非冯诺依曼新架构：IBM100万忆阻器大规模神经网络加速AI](https://www.toutiao.com/i6576794835460555267)
 - [较混合TP-EP策略加速1.4倍！北大联合达摩院提出MoE并行优化框架：基于3D 近内存加速器](https://mp.weixin.qq.com/s?__biz=MjM5ODExNDA2MA==&mid=2449994513&idx=1&sn=02b0796f96095ab59b3017095bfa0383)
+- [RISC之父向AI芯片泼冷水：AI推理不需要更强的GPU，需要另一种硬件](https://mp.weixin.qq.com/s?__biz=MzA3NTIyODUzNA==&mid=2649792028&idx=1&sn=0aef833cdb316e0f0a1d335189ef540f)
 - [深度解读苹果M1芯片](https://mp.weixin.qq.com/s?__biz=Mzg2NDgzNTQ4MA==&mid=2247656339&idx=2&sn=efa51ff660ccfc909a085c7df423eba5)
 - [Apple M1 Max功耗分析与探讨](https://mp.weixin.qq.com/s?__biz=MzUyMTg4NzUwMA==&mid=2247483675&idx=1&sn=5861ba23437b81e97a05863276c72a05)
 - [将Linux移植到M1 Mac真的太难了](https://csdnnews.blog.csdn.net/article/details/115364836)
