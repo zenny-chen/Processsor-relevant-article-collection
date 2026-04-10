@@ -88,6 +88,7 @@
 - [GPFS并行文件系统原理解析](https://www.toutiao.com/i6902319855127609867/)
 - [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
+- [别再用那些来路不明的驱动了——有人用四年把 171 个芯片驱动做成了同一个标准](https://mp.weixin.qq.com/s?__biz=MzYzNDE5NTAxMA==&mid=2247485713&idx=1&sn=94eb962698f3d8018ff902cfd9d54c3c)（Github：[libdriver](https://github.com/libdriver)）
 - [Arm Cortex-M低功耗模式基础](https://www.toutiao.com/a6690433824859357709)
 - [干货分享之ESXi CPU调度机制和原理](https://www.toutiao.com/article/7245537321754378786/)
 - [CPU硬件辅助虚拟化技术](https://www.toutiao.com/i6768263764224508428/)
