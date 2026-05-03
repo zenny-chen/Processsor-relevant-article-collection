@@ -205,6 +205,7 @@
 - [x86指令编码简述(机器码)](https://blog.csdn.net/xiao__1bai/article/details/126584837)（关于 **ModR/M** 可详细参考 vol2 文档，关于 **67H**、**66H** 这些前缀的详细情况，可搜索 vol1 文档。**ModR/M** 的组合顺序从高位到低位依次为：**Mod**，**REG =**，**R/M**；而 **SIB Byte** 的组合顺序从高位到低位依次为：**SS**，**Index**，**Base =**。此外，这里的 **REG =** 表示不包含在寻址操作数中的源/目的寄存器。）
 - [X86 CPU的EFLAGS寄存器各个标识位](https://blog.csdn.net/jiary5201314/article/details/8487981)
 - [Intel ADX](https://wikimili.com/en/Intel_ADX)
+- [Introducing Intel® Advanced Performance Extensions (Intel® APX)](https://www.intel.com/content/www/us/en/developer/articles/technical/advanced-performance-extensions-apx.html)
 
 <br />
 
