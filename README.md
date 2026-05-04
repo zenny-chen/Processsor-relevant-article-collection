@@ -113,6 +113,7 @@
 - [PCIe 错误处理机制及其软件实现 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484436&idx=1&sn=37dfa9cf6c3fa137c31168c853b6d992)
 - [CXL: 内存一致性及软件流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484787&idx=1&sn=0572446aa4d6770f50179090e36e658b)
 - [PCIe: 多socket/RC下无NTB基于pcie switch组网系统设计 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484813&idx=1&sn=8b595ddff48472a651b19d90cd86c53a)（RC：Root Complex（RC，根复合体））
+- [PCIe atomic 原子操作的优势](https://mp.weixin.qq.com/s?__biz=MzkxNDUxNjI5MQ==&mid=2247486735&idx=1&sn=f804399a4accdcfce8f4275ed2e12d71)
 - [基于统一协议GPU芯片高速互联Infinity Fabric的研究 (二)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484055&idx=1&sn=da20de93261778f582d9299a7fa7b10b)
 - [基于NoC的多处理器系统； NoC的基本结构和原理；Router；网络接口；流量控制机制；高速缓存一致性；Network on chip 片上网络； Multi-Processor System](https://blog.csdn.net/qq_43858116/article/details/131178351)
 - [GPMC并口如何实现“小数据-低时延，大数据-高带宽”](https://www.toutiao.com/article/7284641738500178495/)
