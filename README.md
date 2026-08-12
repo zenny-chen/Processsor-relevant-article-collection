@@ -15,6 +15,7 @@
 - [48年前的传奇代码重现！微软开源6955行比尔·盖茨联合开发的BASIC解释器，首日狂揽1.5k Star](https://mp.weixin.qq.com/s?__biz=MzA5ODUxOTA5Mg==&mid=2652605541&idx=1&sn=664e8c06fbdef92c1b10c52a8dd6b5d2)
 - [多核 CPU 和多个 CPU 有何区别？](https://www.toutiao.com/a6700442139270054408/)
 - [CPU、GPU、FPGA、ASIC芯片的对比](https://www.toutiao.com/i6658175328411714061/)
+- [移动 SoC 内部组成 (三)：从卷积、SIMD 到 DSP（processing/processor）（上）](https://mp.weixin.qq.com/s?__biz=Mzk2NDQzNzkyOA==&mid=2247484443&idx=1&sn=7dff7799d76e3f482522f1bed93e7483)
 - [Camera ISP图像处理揭密（阶段二：IFE）](https://mp.weixin.qq.com/s?__biz=MzUyMzkzNzQwMQ==&mid=2247484230&idx=1&sn=a83ee3e124ca43179f324ce771e5d400)
 - [收藏：AI芯片基础知识（2025）](https://mp.weixin.qq.com/s/YoJHG8j9N_xDV3JT7fqFYQ)
 - [一颗新芯片，颠覆CPU和GPU](https://www.toutiao.com/article/7431581160754446863/)
