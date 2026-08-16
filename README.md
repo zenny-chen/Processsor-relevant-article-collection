@@ -6,6 +6,7 @@
 ## 关于各种处理器的高性能计算与嵌入式系统相关资料
 
 - [nvdla](https://github.com/nvdla/)
+- [AERIS-10: Open Source Pulse Linear Frequency Modulated Phased Array Radar](https://github.com/NawfalMotii79/PLFM_RADAR)
 - [数字芯片是怎样设计出来的？](https://www.toutiao.com/article/7169008826468188679/)
 - [为什么单颗裸芯被称为die?](https://www.toutiao.com/article/7327482006542484020/)
 - [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
