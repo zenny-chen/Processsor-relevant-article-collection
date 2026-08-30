@@ -95,6 +95,7 @@
 - [AMD Rome – is it for real? Architecture and initial HPC performance](https://www.dell.com/support/article/zh-cn/sln319015/amd-rome-is-it-for-real-architecture-and-initial-hpc-performance)
 - [线程模型Reactor/Proactor的区别](https://www.toutiao.com/i6902028903288717835/)
 - [GPFS并行文件系统原理解析](https://www.toutiao.com/i6902319855127609867/)
+- [【计算机体系结构连载 08】计算单元为什么还在等：D-Cache、D-TLB 和内存带宽谁在断粮？](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247490238&idx=1&sn=7d5195c18524f18d104b529c0602d119)
 - [最全总结！嵌入式系统知识和接口技术](https://www.toutiao.com/i6751313894649643533/)
 - [嵌入式开发中那些需要了解的硬件](https://www.toutiao.com/i6729372412858597902/)
 - [别再用那些来路不明的驱动了——有人用四年把 171 个芯片驱动做成了同一个标准](https://mp.weixin.qq.com/s?__biz=MzYzNDE5NTAxMA==&mid=2247485713&idx=1&sn=94eb962698f3d8018ff902cfd9d54c3c)（Github：[libdriver](https://github.com/libdriver)）
