@@ -4,7 +4,26 @@
 
 <br />
 
-## 关于各种处理器的高性能计算与嵌入式系统相关资料
+# Content
+
+- [关于各种处理器的高性能计算与嵌入式系统相关资料](#article_collection)
+- [RISC-V 相关资料](#risk-v_relavant_articles)
+- [ARM 处理器相关资料](#arm_relavant_articles)
+- [Intel 处理器相关资料](#intel_relevant_articles)
+- [各个处理器架构ISA编程指南](#all_kinds_of_processor_isa_ref_manuals)
+- [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
+  - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
+  - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example)
+- [在 RTL 设计中“RTN”缩写是什么意思](#rtn_in_rtl_design)
+- [在 RTL 设计中“gated”是什么意思](#gated_in_rtl_design)
+- [在 RTL 设计中“credit”是什么意思](#credit_in_rtl_design)
+- [在 RTL 设计中“outstanding”是什么意思](#outstanding_in_rtl_design)
+  - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
+
+<br />
+
+<a name="article_collection" id="article_collection"></a>
+# 关于各种处理器的高性能计算与嵌入式系统相关资料
 
 - [nvdla](https://github.com/nvdla/)
 - [AERIS-10: Open Source Pulse Linear Frequency Modulated Phased Array Radar](https://github.com/NawfalMotii79/PLFM_RADAR)
@@ -173,7 +192,8 @@
 
 <br />
 
-## RISC-V 相关资料
+<a name="risk-v_relavant_articles" id="risk-v_relavant_articles"></a>
+# RISC-V 相关资料
 
 - [RISC-V并不完美？](https://www.toutiao.com/i6903448502840459779/)
 - [浅谈RISC-V指令集的基本指令格式和立即数操作](https://www.toutiao.com/i6731643373674824204/?group_id=6731643373674824204)
@@ -190,7 +210,8 @@
 
 <br />
 
-## ARM 处理器相关资料
+<a name="arm_relavant_articles" id="arm_relavant_articles"></a>
+# ARM 处理器相关资料
 
 - [ARMv8 - ARM](https://en.wikichip.org/wiki/arm/armv8)
 - [arm/armv8.1](https://en.wikichip.org/wiki/arm/armv8.1)
@@ -210,7 +231,8 @@
 
 <br />
 
-## Intel 处理器相关资料
+<a name="intel_relevant_articles" id="intel_relevant_articles"></a>
+# Intel 处理器相关资料
 
 - [What is Intel Thread Director?](https://techedged.com/intel-thread-director/)
 - [Code Sample: Intel® Deep Learning Boost New Deep Learning Instruction bfloat16 - Intrinsic Functions](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-deep-learning-boost-new-instruction-bfloat16.html)
@@ -222,7 +244,8 @@
 
 <br />
 
-## 各个处理器架构ISA编程指南
+<a name="all_kinds_of_processor_isa_ref_manuals" id="all_kinds_of_processor_isa_ref_manuals"></a>
+# 各个处理器架构ISA编程指南
 
 - [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/en-us/articles/intel-sdm)
 - [Intel® Threading Building Blocks Developer Guide](https://software.intel.com/en-us/tbb-user-guide)
@@ -243,11 +266,15 @@
 
 <br />
 
-## How does an operating system allocate physical memory and map it to the memory page?
+<a name="how_does_os_alloc_phys_mem_and_map" id="how_does_os_alloc_phys_mem_and_map"></a>
+# How does an operating system allocate physical memory and map it to the memory page?
 
 An operating system (OS) allocates physical memory and maps it to memory pages using a process called "paging." Here's a simplified explanation of how it works:
 
-### Memory Allocation and Paging Process
+<br />
+
+<a name="mem_alloc_and_paging_process" id="mem_alloc_and_paging_process"></a>
+## Memory Allocation and Paging Process
 
 1. **Virtual Memory**: 
    - Each process running on an OS is given its own virtual memory space. This is an abstraction that makes it appear as if each process has access to a large, continuous block of memory, independent of other processes.
@@ -270,7 +297,411 @@ An operating system (OS) allocates physical memory and maps it to memory pages u
 7. **TLB (Translation Lookaside Buffer)**: 
    - To speed up the translation of virtual addresses to physical addresses, modern CPUs use a special cache called the TLB. The TLB stores recent page table entries to reduce the number of memory accesses needed for address translation.
 
-### Simplified Example
+<br />
+
+<a name="how_does_os_alloc_phys_mem_and_map_simplified_example" id="how_does_os_alloc_phys_mem_and_map_simplified_example"></a>
+## Simplified Example
 
 Imagine the OS has a process that needs 12KB of memory. With a page size of 4KB, this would require three pages. The OS allocates three physical page frames from RAM and updates the page table of the process to map the virtual pages to these physical frames. When the process accesses memory, the virtual addresses are translated to physical addresses using the page table entries.
+
+<br />
+
+<a name="rtn_in_rtl_design" id="rtn_in_rtl_design"></a>
+# 在 RTL 设计中“RTN”缩写是什么意思
+
+在这篇文章的语境中，**RTN 是 “Return” 的缩写**，表示 **BIF 事务接口的返回/响应通道**。
+
+所以：
+
+> **BIF Transaction Interface (CMD, WRITE, RTN)**
+
+可以理解为 BIF 事务接口包含三类事务或通道：
+
+- **CMD**：Command，命令/请求类事务；
+- **WRITE**：写事务；
+- **RTN**：Return，返回通道，用于把读请求的结果或响应数据从 BIF 返回给 CDM。
+
+结合文档内容可以印证这一点：
+
+- 在 **BIF Transaction Interface** 表中，`MH_LOAD` 用于读取 Control Stream、Predicate、Indirect Workgroup、Stack State、Context State 等数据；
+- 这些 `MH_LOAD` 读取操作的结果，需要通过 **RTN** 返回给 CDM；
+- 文档后面也提到 “any locally held **BIF return data** (fetched control stream data) is flushed”，这里的 BIF return data 就是指通过 RTN 通道返回的预取控制流数据。
+
+因此，这里的 **RTN = Return，即 BIF 的读返回/响应通道**。
+
+<br />
+
+<a name="gated_in_rtl_design" id="gated_in_rtl_design"></a>
+# 在 RTL 设计中“gated”是什么意思
+
+在 RTL 设计中，**gated 的意思是“被门控 / 被使能 / 受条件控制”**。  
+`A is gated by B` 通常表示：**A 是否发生、是否有效，取决于 B；只有 B 有效时，A 才被允许执行或传递。**
+
+你给的例子：
+
+> Link-Stack memory push is gated by splitter link_stack_update_valid
+
+意思是：
+
+> Link-Stack memory 的 push 操作由 splitter 输出的 `link_stack_update_valid` 信号门控。  
+> 只有当 `link_stack_update_valid = 1` 时，才会执行 push；  
+> 如果 `link_stack_update_valid = 0`，push 被禁止 / 屏蔽，不会写入 Link-Stack memory。
+
+---
+
+### 常见 RTL 写法
+
+可能对应这样的逻辑：
+
+```verilog
+// push 使能 = 请求 与 valid 相与
+assign link_stack_push_en = link_stack_push_req & link_stack_update_valid;
+
+always @(posedge clk) begin
+    if (link_stack_push_en) begin
+        mem[ptr] <= push_data;
+        ptr      <= ptr + 1;
+    end
+end
+```
+
+或者更直接地写成：
+
+```verilog
+always @(posedge clk) begin
+    if (link_stack_update_valid) begin
+        // push 到 Link-Stack memory
+        mem[ptr] <= push_data;
+        ptr      <= ptr + 1;
+    end
+end
+```
+
+这里的 `link_stack_update_valid` 就像一道“门”：  
+- 它为 1，门打开，push 可以通过；  
+- 它为 0，门关闭，push 被挡住。
+
+---
+
+### 和 clock gating 的区别
+
+虽然 “gated” 有时也指 **clock gating（时钟门控）**，例如：
+
+> The clock is gated by an enable signal.
+
+但在你这句话里，`memory push is gated by ... valid` 更常见的是**控制路径/数据路径上的条件使能**，不是直接把时钟关掉。它表示“这个操作要不要做，取决于 valid 信号”。
+
+---
+
+### 总结
+
+- **gated = 被门控、被使能、受条件限制**。
+- `push is gated by link_stack_update_valid`  
+  = 只有 `link_stack_update_valid` 有效时，push 才会发生。
+- 在 RTL 中通常体现为 `if (valid)`、`enable & request` 或 `valid & push` 这类逻辑。
+
+<br />
+
+<a name="credit_in_rtl_design" id="credit_in_rtl_design"></a>
+# 在 RTL 设计中“credit”是什么意思
+
+在 RTL 设计中，**credit 通常表示“信用额度 / 令牌 / 可用配额”**，用于**流控（flow control）**。  
+它的核心思想是：
+
+> 发送端必须拥有 credit 才能发送数据；  
+> 每发送一笔数据，就消耗一个 credit；  
+> 接收端处理完数据、释放出缓冲空间后，再把 credit 返还给发送端。
+
+所以 credit 本质上是在描述：**接收端还能再接收多少数据，或者发送端还被允许再发多少数据。**
+
+---
+
+## 1. 典型工作方式
+
+假设接收端有一个深度为 4 的 FIFO：
+
+- 初始时，接收端告诉发送端：我有 4 个 credit。
+- 发送端每发一个数据，自己的 credit 计数减 1。
+- 当 credit 减到 0 时，发送端必须停止发送。
+- 接收端每从 FIFO 中取走一个数据，就返还 1 个 credit。
+- 发送端收到返还的 credit 后，计数加 1，于是可以继续发送。
+
+这样就能保证发送端不会把接收端 FIFO 写溢出，同时也不需要在每个周期都用 `ready` 信号做即时反压。
+
+---
+
+## 2. 常见信号命名
+
+在 RTL 中你可能会看到：
+
+```verilog
+tx_credit        // 发送端当前可用 credit 数
+credit_return    // 接收端返还 credit 的脉冲
+credit_update    // credit 更新
+credit_count     // credit 计数器
+credit_limit     // credit 上限
+```
+
+例如：
+
+```verilog
+// 发送端 credit 计数
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n)
+        credit_count <= INIT_CREDIT;
+    else if (credit_return)
+        credit_count <= credit_count + 1'b1;
+    else if (send_valid && send_ready)
+        credit_count <= credit_count - 1'b1;
+end
+
+// 有 credit 才能发送
+assign send_ready = (credit_count != 0);
+```
+
+这里 `send_ready` 不是接收端直接给的，而是发送端根据自己剩余的 credit 判断出来的。
+
+---
+
+## 3. 和 valid/ready 握手的区别
+
+| 特性 | valid/ready | credit |
+|------|-------------|--------|
+| 反压方式 | 每周期即时反压 | 预授权额度 |
+| 延迟敏感 | 对组合路径和往返延迟敏感 | 适合长延迟链路 |
+| 接收端信息 | 用 ready 表示当前能否接收 | 用 credit 表示还能接收多少 |
+| 典型场景 | 短距离、同时钟域、简单流水 | NoC、PCIe、DMA、跨时钟域、长链路 |
+| 溢出保护 | 靠 ready 实时控制 | 靠 credit 数量控制 |
+
+credit 机制特别适合**往返延迟很大**的场景。因为如果每发一个数据都要等接收端 `ready` 绕回来，带宽会很低；而 credit 相当于提前把“接收额度”发给发送端，发送端可以连续发送多个数据，不必每拍等待。
+
+---
+
+## 4. 常见应用场景
+
+- **NoC / 片上网络**：virtual channel credit，表示下游 VC 还有多少缓冲空间。
+- **PCIe**：接收端广告 header/data credit，发送端跟踪 credit，防止接收端缓冲溢出。
+- **DMA / 内存控制器**：用 credit 控制读返回数据或写数据的上限。
+- **AXI / 总线桥**：某些实现用 credit 做 outstanding transaction 管理。
+- **跨时钟域 FIFO**：用 credit 返还代替每拍同步 ready。
+
+---
+
+## 5. 需要注意的点
+
+1. **credit 不能下溢**：如果 credit 为 0，就不能再减。
+2. **credit 不能丢失或重复返还**：否则会导致发送端误判，可能溢出或带宽浪费。
+3. **初始 credit 要正确**：通常等于接收端缓冲深度，或双方约定的最大 outstanding 数。
+4. **返还时机要明确**：是数据被写入接收端就返还，还是被读出后才返还？这决定了 credit 的实际含义。
+5. **跨时钟域要同步**：credit 返还信号跨时钟域时，通常要做同步和边沿检测。
+
+---
+
+## 6. 一句话总结
+
+在 RTL 设计中，**credit = 发送许可证 / 接收端剩余缓冲额度**。  
+发送端有 credit 才能发，发一个扣一个；接收端腾出空间后返还 credit。  
+它是一种比 `valid/ready` 更适合长延迟链路的流控机制。
+
+<br />
+
+<a name="outstanding_in_rtl_design" id="outstanding_in_rtl_design"></a>
+# 在 RTL 设计中“outstanding”是什么意思
+
+在 RTL 设计中，**outstanding** 一般指：
+
+> **已经发出、但还没有收到响应或还没有完成的事务数量。**
+
+也就是“**未完成事务**”或“**悬而未决的请求**”。
+
+---
+
+## 1. 典型含义
+
+比如一个 master 向内存发读请求：
+
+- 发出读地址 `AR`；
+- 数据 `R` 还没回来；
+- 这个读事务就是 **outstanding**。
+
+发出多个请求后，可能有多个事务同时处于“已发出、未返回”的状态，这些就是 **outstanding transactions**。
+
+系统允许同时存在的最大未完成事务数，通常叫：
+
+- `MAX_OUTSTANDING`
+- `outstanding depth`
+- `outstanding limit`
+- `outstanding capability`
+
+---
+
+## 2. 常见信号/术语
+
+```verilog
+outstanding_cnt        // 当前未完成事务计数
+outstanding_limit      // 最大允许未完成数
+outstanding_full       // 已达到上限
+outstanding_transaction
+max_outstanding
+```
+
+典型逻辑：
+
+```verilog
+// 发出请求 +1，收到响应 -1
+always @(posedge clk or negedge rst_n) begin
+    if (!rst_n)
+        outstanding_cnt <= 0;
+    else if (req_sent && !rsp_recv)
+        outstanding_cnt <= outstanding_cnt + 1'b1;
+    else if (!req_sent && rsp_recv)
+        outstanding_cnt <= outstanding_cnt - 1'b1;
+end
+
+// 达到上限就不能再发
+assign can_send = (outstanding_cnt < MAX_OUTSTANDING);
+```
+
+---
+
+## 3. 常见场景
+
+- **AXI**：读地址 `AR` 发出后，读数据 `R` 未返回前，该读事务是 outstanding；写地址 `AW`、写数据 `W` 发出后，写响应 `B` 未返回前，该写事务也是 outstanding。
+- **NoC / 片上网络**：多个请求包已发出，响应包还没回来。
+- **PCIe**：多个非报告事务同时未完成。
+- **DMA / 内存控制器**：多个读请求已发往内存，数据还没回来。
+- **Cache / MMU**：多个 miss 请求已发出，填充数据还没返回。
+
+---
+
+## 4. 和 credit 的关系
+
+两者经常一起出现，但含义不同：
+
+| 概念 | 含义 |
+|------|------|
+| **outstanding** | 实际已经发出、但还没完成的事务数 |
+| **credit** | 允许发送的“额度/令牌”，是一种流控手段 |
+
+通常：
+
+- 一个 credit 可以对应一个 outstanding 槽位；
+- 发送一个请求消耗一个 credit；
+- 收到响应后返还 credit；
+- `outstanding_cnt` 不能超过 `MAX_OUTSTANDING`，否则会溢出接收端缓冲或导致响应无法匹配。
+
+所以可以理解为：
+
+> **credit 是“许可证”，outstanding 是“已经用掉但还没归还的许可证数量”。**
+
+---
+
+## 5. 为什么需要 outstanding
+
+主要是为了**隐藏延迟、提高吞吐**。
+
+如果每发一个请求都必须等响应回来才能发下一个，带宽会非常低。  
+允许一定数量的 outstanding，就可以连续发多个请求，让它们在流水线中并行处理。
+
+但 outstanding 不能无限大，通常受限于：
+
+- 接收端缓冲深度；
+- 事务 ID / tag 位宽；
+- 重排序资源；
+- 响应匹配逻辑；
+- 总线协议规定。
+
+---
+
+## 6. 一句话总结
+
+在 RTL 设计中，**outstanding = 已发出但尚未完成的事务数**。  
+它衡量“有多少请求还在路上”，常用于 AXI、NoC、PCIe、DMA 等总线或存储接口，和 credit 配合实现流控与延迟隐藏。
+
+<br />
+
+<a name="diff_from_outstanding_and_pending" id="diff_from_outstanding_and_pending"></a>
+## “outstanding”与“pending”有何区别吗？
+
+在 RTL 设计中，**outstanding** 和 **pending** 经常被混用，但严格来说有细微区别：
+
+> **outstanding**：已经发出、但还没收到响应/还没完成的事务。  
+> **pending**：尚未完成、待处理的事务或事件，范围更广，可能还没发出。
+
+---
+
+## 1. 核心区别
+
+| 维度 | outstanding | pending |
+|------|-------------|---------|
+| 强调点 | 已发出、在途、等待响应 | 未决、待处理、尚未完成 |
+| 是否已发出 | 通常已经发出 | 不一定，可能还在排队、等待资源 |
+| 典型协议 | AXI、NoC、PCIe、DMA 等请求-响应接口 | 中断、队列、状态机、缓存 miss 等 |
+| 是否计数 | 通常有 outstanding 计数和上限 | 可能只是状态位，也可能有队列深度 |
+| 是否需 ID/tag | 通常需要，用于匹配响应 | 不一定，取决于具体场景 |
+| 范围 | 较具体 | 较宽泛 |
+
+简单说：
+
+> **outstanding 通常是 pending 的一个子集。**  
+> 一个事务可以既是 pending 又是 outstanding；但 pending 不一定 outstanding。
+
+---
+
+## 2. 举例说明
+
+### AXI 总线
+
+- Master 发出读地址 `AR`，但读数据 `R` 还没回来 → 这个读事务是 **outstanding**。
+- 如果读请求还在内部队列里，还没发到 AXI 总线上 → 它是 **pending**，但还不是 outstanding。
+- 所以：`pending` 可以表示“待发送”，`outstanding` 表示“已发送、待返回”。
+
+### Cache / MMU
+
+- 检测到 cache miss，分配了 MSHR，但请求还没发出去 → **pending miss**。
+- 请求已经发到内存，等待数据填充 → **outstanding miss**。
+- 两者都可能同时存在，但阶段不同。
+
+### 中断控制器
+
+- 中断已触发，但 CPU 还没处理 → **pending interrupt**。
+- 一般不会说 “outstanding interrupt”，因为中断不是请求-响应事务。
+
+### 流水线 / 状态机
+
+- 一个操作等待某个条件满足才能继续 → **pending**。
+- 如果它已经作为请求发出，等待对方返回 → **outstanding**。
+
+---
+
+## 3. 信号命名上的区别
+
+常见 RTL 信号：
+
+```verilog
+outstanding_cnt        // 当前在途未完成事务数
+outstanding_limit      // 最大允许在途数
+outstanding_full       // 在途数达到上限
+
+pending_req            // 有待处理的请求
+pending_cnt            // 待处理事务数
+pending_flag           // 待处理状态标志
+```
+
+- `outstanding_cnt` 一般只增不减地跟踪“已发未回”。
+- `pending_cnt` 可能跟踪“尚未完成”的所有事务，包括还没发出的。
+
+---
+
+## 4. 总结
+
+- **outstanding**：已发出、未返回，强调“在途”和“未完成响应”，常用于总线、NoC、DMA 等请求-响应协议。
+- **pending**：未决、待处理，强调“尚未完成”，范围更广，可能还没发出，也可能已发出未返回。
+- 两者有时可以互换，但设计文档中若同时出现，通常：
+  - `pending` = 待处理；
+  - `outstanding` = 已发出、等待响应。
+
+一句话：
+
+> **pending 是“还没搞定”，outstanding 是“已经发出去了，但还没回来”。**
 
