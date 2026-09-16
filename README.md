@@ -145,6 +145,7 @@
 - [PCIe atomic 原子操作的优势](https://mp.weixin.qq.com/s?__biz=MzkxNDUxNjI5MQ==&mid=2247486735&idx=1&sn=f804399a4accdcfce8f4275ed2e12d71)
 - [基于统一协议GPU芯片高速互联Infinity Fabric的研究 (二)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484055&idx=1&sn=da20de93261778f582d9299a7fa7b10b)
 - [基于NoC的多处理器系统； NoC的基本结构和原理；Router；网络接口；流量控制机制；高速缓存一致性；Network on chip 片上网络； Multi-Processor System](https://blog.csdn.net/qq_43858116/article/details/131178351)
+- [NPU 越堆越多，为什么先堵住的是 NoC？](https://mp.weixin.qq.com/s?__biz=Mzg2NTA1NzgxOQ==&mid=2247485747&idx=1&sn=1ec3681f2461dbc087a69a41cb9e50b9)
 - [GPMC并口如何实现“小数据-低时延，大数据-高带宽”](https://www.toutiao.com/article/7284641738500178495/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
 - [Multiplexer \(MUX\)](https://en.wikichip.org/wiki/multiplexer)
