@@ -82,6 +82,7 @@
 - [并发原理系列二：浅论Lock 与X86 Cache 一致性](https://www.toutiao.com/a6815374276636443148/)
 - [解密Linux内核神器：内存屏障的秘密功效与应用方法](https://www.toutiao.com/article/7249661344411173428/)
 - [cache coherence和memory consistency](https://mp.weixin.qq.com/s?__biz=MzU3NDA1NDY0Ng==&mid=2247484035&idx=1&sn=2d29cd26f4cf52b97cccb6cf53033341)
+- [计算机体系结构15｜Cache Coherence 与 Memory Consistency](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247490954&idx=1&sn=c4b2ebb442db4c1e68e053b1c407c18a)
 - [计算机的Cache和Memory访问时Write-back，Write-through及write allocate的区别](https://www.cnblogs.com/guojingdeyuan/p/7626983.html)
 - [Understanding write-through, write-around and write-back caching (with Python)](https://shahriar.svbtle.com/Understanding-writethrough-writearound-and-writeback-caching-with-python)
 - [深入理解cache对写好代码至关重要](https://www.bilibili.com/read/cv24462455/)
