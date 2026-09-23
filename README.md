@@ -11,6 +11,7 @@
 - [ARM 处理器相关资料](#arm_relavant_articles)
 - [Intel 处理器相关资料](#intel_relevant_articles)
 - [各个处理器架构ISA编程指南](#all_kinds_of_processor_isa_ref_manuals)
+- [System Verilog 相关](#system_verilog_relevant)
 - [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
   - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
   - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example)
@@ -265,6 +266,15 @@
 - [C8051F Series](https://www.silabs.com/support/resources.ct-data-sheets.ct-manuals.page=3)
 - [HiFi 2 Audio Engine Instruction Set Architecture Reference Manua](https://wenku.baidu.com/view/3a9e44c3d5bbfd0a7956735c.html)
 - [Cadence HiFi 3 DSP User Manual Page](https://www.manualslib.com/manual/1484529/Cadence-Hifi-3-Dsp.html)
+
+<br />
+
+<a name="system_verilog_relevant" id="system_verilog_relevant"></a>
+# System Verilog 相关
+
+- 整数字面量的表示：`<bit count>'<radix><digits>`。比如：`4'b0100`，`3'd7`，`8'h7f`
+  - `<bit count>`：表示比特位数
+  - `<radix>`：表示基数。`b` 表示二进制；`d` 表示十进制；`h` 表示十六进制
 
 <br />
 
