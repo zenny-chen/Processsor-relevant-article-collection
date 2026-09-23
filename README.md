@@ -275,6 +275,26 @@
 - 整数字面量的表示：`<bit count>'<radix><digits>`。比如：`4'b0100`，`3'd7`，`8'h7f`
   - `<bit count>`：表示比特位数
   - `<radix>`：表示基数。`b` 表示二进制；`d` 表示十进制；`h` 表示十六进制
+- **`|`** 符号在 System Verilog 中的语义：有两种——
+
+1. **Bitwise OR**（按位或），比如：
+
+```verilog
+logic [3:0] a = 4b'1010;
+logic [3:0] b = 4b'1100;
+logic [3:0] c;
+
+assign c = a | b;    // c = 4'b1110
+```
+
+2. **Reduction OR**（归约或）：当 **`|`** 用于单目操作符时，它会将一个比特向量中的所有比特位使用“按位或”运算，归约为一单个比特。比如：
+
+```verilog
+logic [3:0] d = 4'b0101;
+logic e;
+
+assign e = |d;    // e = 1。等价于：d[0] | d[1] | d[2] | d[3]
+```
 
 <br />
 
