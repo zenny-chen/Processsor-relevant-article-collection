@@ -20,6 +20,7 @@
 - [在 RTL 设计中“credit”是什么意思](#credit_in_rtl_design)
 - [在 RTL 设计中“outstanding”是什么意思](#outstanding_in_rtl_design)
   - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
+- [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
 
 <br />
 
@@ -736,4 +737,48 @@ pending_flag           // 待处理状态标志
 一句话：
 
 > **pending 是“还没搞定”，outstanding 是“已经发出去了，但还没回来”。**
+
+<br />
+
+<a name="tie-back_mux_in_rtl" id="tie-back_mux_in_rtl"></a>
+# 在 RTL 设计中，什么是“tie-back mux”
+
+In RTL design, a **tie‑back mux** (sometimes called a *feedback mux*) is a multiplexer that allows a signal to be fed back into itself, typically to preserve or hold state when no new data is being written.
+
+### 🔹 Core Idea
+- A tie‑back mux selects between:
+  1. **New input data** (e.g., from the datapath or functional unit).
+  2. **The register’s current output** (fed back into its input).
+
+- When the control signal chooses the feedback path, the register "ties back" to its own value, effectively holding its state without needing a separate enable signal.
+
+---
+
+### 🔹 Why It’s Used
+- **Register enable emulation**: Instead of having a dedicated enable pin, a tie‑back mux lets the register keep its old value by feeding it back.
+- **Pipeline control**: In CPU/GPU pipelines, tie‑back muxes are used to stall stages by recirculating the previous value.
+- **Low‑level synthesis convenience**: Some synthesis flows prefer mux‑based feedback over explicit clock‑enable logic.
+
+---
+
+### 🔹 Example in SystemVerilog
+```systemverilog
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n)
+        q <= 0;
+    else
+        q <= sel ? d : q;  // tie-back mux: if sel=0, q feeds back into itself
+end
+```
+
+Here:
+- `sel=1` → load new data `d`.
+- `sel=0` → feed back `q` (hold state).
+
+---
+
+### ✅ Summary
+A **tie‑back mux** is essentially a **self‑feedback multiplexer** that allows a register to either update with new data or retain its old value. It’s a common RTL pattern for implementing **stalling, register enables, and state retention** without extra control logic.
+
+---
 
