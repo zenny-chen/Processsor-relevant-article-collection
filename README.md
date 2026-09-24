@@ -21,6 +21,7 @@
 - [在 RTL 设计中“outstanding”是什么意思](#outstanding_in_rtl_design)
   - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
 - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
+- [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
 
 <br />
 
@@ -781,4 +782,112 @@ Here:
 A **tie‑back mux** is essentially a **self‑feedback multiplexer** that allows a register to either update with new data or retain its old value. It’s a common RTL pattern for implementing **stalling, register enables, and state retention** without extra control logic.
 
 ---
+
+<br />
+
+<a name="rtl_strobe_bit" id="rtl_strobe_bit"></a>
+# 在 RTL 设计中的“strobe bit”
+
+在 RTL 设计中，**strobe bit** 通常译为 **“选通位”**。  
+它的核心作用是：**指示某个数据、某个字节或某次传输在什么时刻有效，或者哪些部分应该被写入/采样/处理。**
+
+简单说：
+
+> **strobe bit 就是一位控制信号，用来“选通”或“标记”对应的数据是否有效、是否参与操作。**
+
+---
+
+## 1. 最常见的含义：字节选通 / 写选通
+
+在总线接口中，strobe bit 经常是一组位，每一位对应数据总线上的一个字节。
+
+最典型的例子是 **AXI 的 WSTRB**：
+
+- `WDATA` 是 32 位；
+- `WSTRB` 是 4 位；
+- `WSTRB[i] = 1` 表示 `WDATA[8*i+7 : 8*i]` 这个字节有效，需要写入；
+- `WSTRB[i] = 0` 表示对应字节不写入，保持原值。
+
+例如：
+
+```verilog
+// 32 位写数据，4 位写选通
+input [31:0] wdata;
+input [3:0]  wstrb;
+
+always @(posedge clk) begin
+    if (wstrb[0]) mem[addr][7:0]   <= wdata[7:0];
+    if (wstrb[1]) mem[addr][15:8]  <= wdata[15:8];
+    if (wstrb[2]) mem[addr][23:16] <= wdata[23:16];
+    if (wstrb[3]) mem[addr][31:24] <= wdata[31:24];
+end
+```
+
+这里的 `wstrb` 就是 4 个 strobe bit。  
+它支持：
+
+- 部分写；
+- 非对齐写；
+- 字节使能；
+- 避免读-改-写。
+
+---
+
+## 2. 源同步接口中的数据选通
+
+在 DDR、源同步接口中，**strobe** 常指 **DQS（Data Strobe）**：
+
+- 发送端在发送数据的同时发送 DQS；
+- 接收端用 DQS 的边沿来采样数据；
+- 它不是普通的数据位，而是“采样选通信号”。
+
+虽然 DQS 通常叫 data strobe，不叫 strobe bit，但概念相同：  
+**用选通信号告诉接收端“现在数据有效，可以采样”。**
+
+---
+
+## 3. 串行编码中的控制/选通位
+
+在某些串行协议中，strobe bit 可能表示：
+
+- 当前传输的是数据还是控制字符；
+- 数据包边界；
+- 特殊标记；
+- 有效载荷指示。
+
+例如 8b/10b 编码中的 K 码，可以看作一种控制/选通标记。
+
+---
+
+## 4. 和 valid 的区别
+
+| 信号 | 含义 |
+|------|------|
+| `valid` | 整个数据/事务是否有效 |
+| `strobe` | 数据中哪些部分有效，或何时采样有效 |
+
+所以：
+
+- `valid = 1` 表示“这拍有数据”；
+- `strobe[i] = 1` 表示“第 i 个字节/位有效，需要处理”。
+
+---
+
+## 5. 总结
+
+在 RTL 设计中，**strobe bit** 通常指：
+
+> **一位选通信号，用于标记对应数据是否有效、是否写入、是否采样或是否参与操作。**
+
+常见形式：
+
+- AXI 的 `WSTRB`：字节写选通；
+- 存储器接口的 `DM` / `DQM`：数据掩码；
+- DDR 的 `DQS`：数据选通；
+- 串行协议中的控制位：标记数据/控制类型。
+
+一句话：
+
+> **strobe bit 是“数据有效/选通”的指示位，告诉接收端什么时候、哪些位应该被处理。**
+
 
