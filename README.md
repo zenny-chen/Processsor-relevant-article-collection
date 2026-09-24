@@ -22,6 +22,7 @@
   - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
 - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
 - [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
+- [在 RTL 设计中“Cascade”含义](#rtl_cascade)
 
 <br />
 
@@ -890,4 +891,133 @@ end
 
 > **strobe bit 是“数据有效/选通”的指示位，告诉接收端什么时候、哪些位应该被处理。**
 
+<br />
+
+<a name="rtl_cascade" id="rtl_cascade"></a>
+# 在 RTL 设计中“Cascade”含义
+
+在 RTL 设计中，**cascade** 通常译为 **“级联”** 或 **“串联”**。  
+它的核心含义是：
+
+> 把多个相同或相似的模块/阶段按顺序连接起来，**前一级的输出作为后一级的输入**，形成一条链式结构。
+
+级联的目的通常是为了：
+
+- 扩展功能或位宽；
+- 提高吞吐率（流水线）；
+- 分阶段处理复杂流程；
+- 复用同一模块；
+- 降低单级逻辑复杂度。
+
+---
+
+## 1. 你给的两个例子
+
+### 例子一：the generic cascade is used as a two-stage kick pipeline
+
+> “通用级联被用作两级 kick 流水线。”
+
+这里的意思是：
+
+- 有两个阶段（stage）；
+- 这两个阶段通过 **cascade** 方式连接；
+- 前一级处理完的数据/控制信号传给下一级；
+- 整体构成一个 **两级流水线**，用来处理 kick（启动/调度）操作。
+
+所以这里的 cascade 强调的是**连接方式**，而 pipeline 强调的是**流水线结构**。  
+可以理解为：用级联的方式搭出了一个两级流水线。
+
+---
+
+### 例子二：Up to 3 cascaded some_module Finite State Machines
+
+> “最多 3 个级联的 some_module 有限状态机。”
+
+这里表示：
+
+- 有多个 `some_module` FSM；
+- 它们以级联方式连接；
+- 最多可以串 3 个；
+- 可能是第一个 FSM 的输出触发或控制第二个 FSM，第二个再控制第三个；
+- 形成多级状态机，用来处理更复杂的时序或控制流程。
+
+这种结构常见于：
+
+- 协议处理分段；
+- 复杂仲裁；
+- 多级流水控制；
+- 状态空间扩展。
+
+---
+
+## 2. 级联的常见形式
+
+### 2.1 流水线级联
+
+```verilog
+module stage1(...);
+module stage2(...);
+
+// stage1 输出接 stage2 输入
+stage1 u_stage1 (.clk(clk), .in(data_in), .out(data_mid));
+stage2 u_stage2 (.clk(clk), .in(data_mid), .out(data_out));
+```
+
+这就是最简单的两级级联流水线。
+
+### 2.2 状态机级联
+
+```verilog
+fsm1 控制 fsm2 的启动；
+fsm2 完成后通知 fsm1；
+fsm2 控制 fsm3；
+```
+
+形成 `fsm1 -> fsm2 -> fsm3` 的级联。
+
+### 2.3 计数器/加法器级联
+
+- 多个计数器级联扩展位宽；
+- 加法器级联形成进位链；
+- 中断控制器级联扩展中断源。
+
+### 2.4 仲裁器级联
+
+多个小仲裁器级联成更大的仲裁器。
+
+---
+
+## 3. 级联需要注意的问题
+
+- **延迟增加**：每级都会引入一拍或组合延迟。
+- **握手/反压**：级联模块之间通常需要 `valid/ready` 或 credit 机制，防止数据丢失或溢出。
+- **使能控制**：有时用 enable 信号控制某级是否工作。
+- **复位与同步**：多级之间要保证复位和时钟域一致。
+- **资源复用**：级联不一定都是流水线，也可能是分时复用。
+
+---
+
+## 4. 和 concatenate 的区别
+
+| 术语 | 含义 |
+|------|------|
+| **cascade** | 模块级联，前后连接，形成链 |
+| **concatenate** | 位拼接，如 `{a, b}`，把信号拼成更宽的向量 |
+
+两者中文都可能叫“级联/拼接”，但在 RTL 中要区分：
+
+- cascade 是**模块或阶段**的连接；
+- concatenate 是**信号位**的拼接。
+
+---
+
+## 5. 总结
+
+在 RTL 设计中，**cascade = 级联**，指多个模块或阶段按顺序连接，前一级输出驱动后一级输入。
+
+- “generic cascade as a two-stage kick pipeline” = 用级联方式搭出两级 kick 流水线；
+- “3 cascaded FSMs” = 最多 3 个状态机串联，形成多级控制。
+
+一句话：  
+**cascade 就是把多个东西串起来，一级一级往下传。**
 
