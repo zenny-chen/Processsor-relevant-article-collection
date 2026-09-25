@@ -23,7 +23,7 @@
 - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
 - [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
 - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
-- [Verilog 中的“高阻值”](verilog_high_impedance)
+- [Verilog 中的“高阻值”](#verilog_high_impedance)
 
 <br />
 
@@ -1027,7 +1027,7 @@ fsm2 控制 fsm3；
 <a name="verilog_high_impedance" id="verilog_high_impedance"></a>
 # Verilog 中的“高阻值”
 
-在 Verilog 中，“**高阻值**”通常是指 **高阻态**，也就是逻辑值 **`z`**（或 `Z`）。它不是指一个具体的电阻数值，而是表示：
+在 Verilog 中，“**高阻值**”通常是指 **高阻态** (**High Impedance**)，也就是逻辑值 **`z`**（或 `Z`）。它不是指一个具体的电阻数值，而是表示：
 
 > **该节点没有被任何驱动源驱动，相当于开路、悬空或高阻抗状态。**
 
