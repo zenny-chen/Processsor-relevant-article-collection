@@ -295,6 +295,15 @@
 <a name="boolean_algebra_theorems" id="boolean_algebra_theorems"></a>
 ## 逻辑代数的定理
 
+- 定理1：`0 + 0 = 0;  1 + 0 = 1;  0 + 1 = 1;  1 + 1 = 1;  0・0 = 0;  1・0 = 0;  0・1 = 0;  1・1 = 1;`
+- 定理2：`A + A = A;  A・A = A;`
+- 定理3：`A + A・B = A;  A・(A + B) = A;  // A + A・B = A + (1・B) = A・1 = A;`
+- 定理4：`A + A'・B = A + B;  A・(A' + B) = A・B;  // A・(A' + B) = A・A' + A・B = 0 + A・B = A・B;`
+- 定理5：`A'' = A;`
+- 定理6：`(A + B)' = A'・B';  (A・B)' = A' + B';`（[德·摩根定律](https://baike.baidu.com/item/%E5%BE%B7%C2%B7%E6%91%A9%E6%A0%B9%E5%AE%9A%E5%BE%8B/489073)：[De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)）
+- 定理7：`A・B + A・B' = A;  (A + B)・(A + B') = A;`
+- 定理8：`A・B + A'・C + B・C = A・B + A'・C;  (A + B)・(A' + C)・(B + C) = (A + B)・(A' + C)`
+
 <br />
 
 <a name="system_verilog_relevant" id="system_verilog_relevant"></a>
