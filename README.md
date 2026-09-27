@@ -333,7 +333,25 @@
 
 基本卡诺图：
 
-1. 
+1. ![kmap0](images/kmap0.PNG)
+
+此图最终项为： `B`。
+
+2. ![kmap1](images/kmap1.PNG)
+
+此图最终项为： `A'`。
+
+3. ![kmap2](images/kmap2.PNG)
+
+此图最终项为： `A' + B'`。
+
+4. ![kmap3](images/kmap3.PNG)
+
+此图最终项为：`B'D' + BD + AB + CD`。`B'D'` 为四个角落项；`BD` 为中间四个相邻项；`AB` 为垂直四个项；`CD` 为水平四个项。
+
+5. ![kmap4](images/kmap4.PNG)
+
+此图最终项为：`B'D' + BD + B'C + AD'`。`B'C` 为下半部分左边与右边连起来的项；`AD'` 为右半部分上边与下边连起来的项。
 
 <br />
 
