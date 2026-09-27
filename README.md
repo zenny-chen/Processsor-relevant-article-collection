@@ -14,6 +14,7 @@
 - [数字逻辑基础](#digital_logic_basic)
   - [逻辑代数的公理](#boolean_algebra_axioms)
   - [逻辑代数的定理](#boolean_algebra_theorems)
+  - [格雷码](#gray_code)
 - [System Verilog 相关](#system_verilog_relevant)
   - [在 RTL 设计中“RTN”缩写是什么意思](#rtn_in_rtl_design)
   - [在 RTL 设计中“gated”是什么意思](#gated_in_rtl_design)
@@ -303,6 +304,22 @@
 - 定理6：`(A + B)' = A'・B';  (A・B)' = A' + B';`（[德·摩根定律](https://baike.baidu.com/item/%E5%BE%B7%C2%B7%E6%91%A9%E6%A0%B9%E5%AE%9A%E5%BE%8B/489073)：[De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)）
 - 定理7：`A・B + A・B' = A;  (A + B)・(A + B') = A;`
 - 定理8：`A・B + A'・C + B・C = A・B + A'・C;  (A + B)・(A' + C)・(B + C) = (A + B)・(A' + C)`
+
+<br />
+
+<a name="gray_code" id="gray_code"></a>
+## 格雷码
+
+[格雷码](https://baike.baidu.com/item/%E6%A0%BC%E9%9B%B7%E7%A0%81/6510858)（[Gray code](https://en.wikipedia.org/wiki/Gray_code)）是一种反射码，它的次序取决于其值的二进制位数。一位格雷码序列是两位格雷码的基础。为了产生两位格雷码序列，我们先列出一位格雷码序列；接着再列出一位格雷码序列，但次序要颠倒（镜面反射）。
+
+- 一位格雷码：0  |  1
+- 两位格雷码：00  01  |  （最高位追加1，低位做镜面反射）11  10
+- 三位格雷码：000  001  011  010  | （最高位追加1，低位做镜面反射）110  111  101  100
+- 四位格雷码：0000  0001  0011  0010  0110  0111  0101  0100  | （最高位追加1，低位做镜面反射）1100  1101  1111  1110  1011  1001  1000
+
+正常二进制数转格雷码的算法：
+
+![binary_to_gray](images/binary_to_gray.webp)
 
 <br />
 
