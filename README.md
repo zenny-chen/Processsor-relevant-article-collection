@@ -11,19 +11,22 @@
 - [ARM 处理器相关资料](#arm_relavant_articles)
 - [Intel 处理器相关资料](#intel_relevant_articles)
 - [各个处理器架构ISA编程指南](#all_kinds_of_processor_isa_ref_manuals)
+- [数字逻辑基础](#digital_logic_basic)
+  - [逻辑代数的公理](#boolean_algebra_axioms)
+  - [逻辑代数的定理](#boolean_algebra_theorems)
 - [System Verilog 相关](#system_verilog_relevant)
+  - [在 RTL 设计中“RTN”缩写是什么意思](#rtn_in_rtl_design)
+  - [在 RTL 设计中“gated”是什么意思](#gated_in_rtl_design)
+  - [在 RTL 设计中“credit”是什么意思](#credit_in_rtl_design)
+  - [在 RTL 设计中“outstanding”是什么意思](#outstanding_in_rtl_design)
+    - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
+  - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
+  - [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
+  - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
+  - [Verilog 中的“高阻值”](#verilog_high_impedance)
 - [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
   - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
-  - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example)
-- [在 RTL 设计中“RTN”缩写是什么意思](#rtn_in_rtl_design)
-- [在 RTL 设计中“gated”是什么意思](#gated_in_rtl_design)
-- [在 RTL 设计中“credit”是什么意思](#credit_in_rtl_design)
-- [在 RTL 设计中“outstanding”是什么意思](#outstanding_in_rtl_design)
-  - [“outstanding”与“pending”有何区别吗？](#diff_from_outstanding_and_pending)
-- [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
-- [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
-- [在 RTL 设计中“Cascade”含义](#rtl_cascade)
-- [Verilog 中的“高阻值”](#verilog_high_impedance)
+  - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example) 
 
 <br />
 
@@ -273,6 +276,27 @@
 
 <br />
 
+<a name="digital_logic_basic" id="digital_logic_basic"></a>
+# 数字逻辑基础
+
+<br />
+
+<a name="boolean_algebra_axioms" id="boolean_algebra_axioms"></a>
+## 逻辑代数的公理
+
+- 交换律：`A + B = B + A;  A・B = B・A;`
+- 结合律：`(A + B) + C = A + (B + C);  (A・B)・C = A・(B・C);`
+- 分配律：`A + (B・C) = (A + B)・(A + C);  A・(B + C) = A・B + A・C;`
+- 0-1律：`A + 0 = A;  A・1 = A;  A + 1 = 1;  A・0 = 0;`
+- 互补律：`A + A' = 1;  A・A' = 0;`
+
+<br />
+
+<a name="boolean_algebra_theorems" id="boolean_algebra_theorems"></a>
+## 逻辑代数的定理
+
+<br />
+
 <a name="system_verilog_relevant" id="system_verilog_relevant"></a>
 # System Verilog 相关
 
@@ -302,48 +326,8 @@ assign e = |d;    // e = 1。等价于：d[0] | d[1] | d[2] | d[3]
 
 <br />
 
-<a name="how_does_os_alloc_phys_mem_and_map" id="how_does_os_alloc_phys_mem_and_map"></a>
-# How does an operating system allocate physical memory and map it to the memory page?
-
-An operating system (OS) allocates physical memory and maps it to memory pages using a process called "paging." Here's a simplified explanation of how it works:
-
-<br />
-
-<a name="mem_alloc_and_paging_process" id="mem_alloc_and_paging_process"></a>
-## Memory Allocation and Paging Process
-
-1. **Virtual Memory**: 
-   - Each process running on an OS is given its own virtual memory space. This is an abstraction that makes it appear as if each process has access to a large, continuous block of memory, independent of other processes.
-
-2. **Page Tables**: 
-   - The OS maintains page tables for each process. A page table is a data structure used to map virtual addresses to physical addresses. It contains entries that translate virtual page numbers to physical frame numbers.
-
-3. **Page Size**: 
-   - Memory is divided into fixed-size blocks called pages (commonly 4KB each). Correspondingly, physical memory is divided into page frames, which are blocks of the same size as the pages.
-
-4. **Page Allocation**: 
-   - When a process needs memory, the OS allocates a certain number of pages. The OS then maps these virtual pages to physical page frames in RAM using the page table.
-
-5. **Page Fault Handling**: 
-   - If a process tries to access a page that is not currently mapped to a physical frame (a "page fault"), the OS will handle this by either allocating a new physical frame or bringing the required page from disk (swap space) into physical memory.
-
-6. **Physical Memory Management**: 
-   - The OS keeps track of free and used physical memory using data structures like free lists or bitmaps. When a page frame is no longer needed, it is marked as free and can be allocated to other processes.
-
-7. **TLB (Translation Lookaside Buffer)**: 
-   - To speed up the translation of virtual addresses to physical addresses, modern CPUs use a special cache called the TLB. The TLB stores recent page table entries to reduce the number of memory accesses needed for address translation.
-
-<br />
-
-<a name="how_does_os_alloc_phys_mem_and_map_simplified_example" id="how_does_os_alloc_phys_mem_and_map_simplified_example"></a>
-## Simplified Example
-
-Imagine the OS has a process that needs 12KB of memory. With a page size of 4KB, this would require three pages. The OS allocates three physical page frames from RAM and updates the page table of the process to map the virtual pages to these physical frames. When the process accesses memory, the virtual addresses are translated to physical addresses using the page table entries.
-
-<br />
-
 <a name="rtn_in_rtl_design" id="rtn_in_rtl_design"></a>
-# 在 RTL 设计中“RTN”缩写是什么意思
+## 在 RTL 设计中“RTN”缩写是什么意思
 
 在这篇文章的语境中，**RTN 是 “Return” 的缩写**，表示 **BIF 事务接口的返回/响应通道**。
 
@@ -368,7 +352,7 @@ Imagine the OS has a process that needs 12KB of memory. With a page size of 4KB,
 <br />
 
 <a name="gated_in_rtl_design" id="gated_in_rtl_design"></a>
-# 在 RTL 设计中“gated”是什么意思
+## 在 RTL 设计中“gated”是什么意思
 
 在 RTL 设计中，**gated 的意思是“被门控 / 被使能 / 受条件控制”**。  
 `A is gated by B` 通常表示：**A 是否发生、是否有效，取决于 B；只有 B 有效时，A 才被允许执行或传递。**
@@ -439,7 +423,7 @@ end
 <br />
 
 <a name="credit_in_rtl_design" id="credit_in_rtl_design"></a>
-# 在 RTL 设计中“credit”是什么意思
+## 在 RTL 设计中“credit”是什么意思
 
 在 RTL 设计中，**credit 通常表示“信用额度 / 令牌 / 可用配额”**，用于**流控（flow control）**。  
 它的核心思想是：
@@ -542,7 +526,7 @@ credit 机制特别适合**往返延迟很大**的场景。因为如果每发一
 <br />
 
 <a name="outstanding_in_rtl_design" id="outstanding_in_rtl_design"></a>
-# 在 RTL 设计中“outstanding”是什么意思
+## 在 RTL 设计中“outstanding”是什么意思
 
 在 RTL 设计中，**outstanding** 一般指：
 
@@ -657,7 +641,7 @@ assign can_send = (outstanding_cnt < MAX_OUTSTANDING);
 <br />
 
 <a name="diff_from_outstanding_and_pending" id="diff_from_outstanding_and_pending"></a>
-## “outstanding”与“pending”有何区别吗？
+### “outstanding”与“pending”有何区别吗？
 
 在 RTL 设计中，**outstanding** 和 **pending** 经常被混用，但严格来说有细微区别：
 
@@ -744,7 +728,7 @@ pending_flag           // 待处理状态标志
 <br />
 
 <a name="tie-back_mux_in_rtl" id="tie-back_mux_in_rtl"></a>
-# 在 RTL 设计中，什么是“tie-back mux”
+## 在 RTL 设计中，什么是“tie-back mux”
 
 In RTL design, a **tie‑back mux** (sometimes called a *feedback mux*) is a multiplexer that allows a signal to be fed back into itself, typically to preserve or hold state when no new data is being written.
 
@@ -1117,4 +1101,46 @@ assign bus = en_b ? data_b : 1'bz;
 
 在 Verilog 中，“高阻值”就是 **高阻态 `z`**，表示该节点未被驱动、相当于悬空或开路。  
 它常用于三态总线，让多个驱动源共享同一根线，但同一时刻只允许一个驱动。
+
+<br />
+
+<a name="how_does_os_alloc_phys_mem_and_map" id="how_does_os_alloc_phys_mem_and_map"></a>
+# How does an operating system allocate physical memory and map it to the memory page?
+
+An operating system (OS) allocates physical memory and maps it to memory pages using a process called "paging." Here's a simplified explanation of how it works:
+
+<br />
+
+<a name="mem_alloc_and_paging_process" id="mem_alloc_and_paging_process"></a>
+## Memory Allocation and Paging Process
+
+1. **Virtual Memory**: 
+   - Each process running on an OS is given its own virtual memory space. This is an abstraction that makes it appear as if each process has access to a large, continuous block of memory, independent of other processes.
+
+2. **Page Tables**: 
+   - The OS maintains page tables for each process. A page table is a data structure used to map virtual addresses to physical addresses. It contains entries that translate virtual page numbers to physical frame numbers.
+
+3. **Page Size**: 
+   - Memory is divided into fixed-size blocks called pages (commonly 4KB each). Correspondingly, physical memory is divided into page frames, which are blocks of the same size as the pages.
+
+4. **Page Allocation**: 
+   - When a process needs memory, the OS allocates a certain number of pages. The OS then maps these virtual pages to physical page frames in RAM using the page table.
+
+5. **Page Fault Handling**: 
+   - If a process tries to access a page that is not currently mapped to a physical frame (a "page fault"), the OS will handle this by either allocating a new physical frame or bringing the required page from disk (swap space) into physical memory.
+
+6. **Physical Memory Management**: 
+   - The OS keeps track of free and used physical memory using data structures like free lists or bitmaps. When a page frame is no longer needed, it is marked as free and can be allocated to other processes.
+
+7. **TLB (Translation Lookaside Buffer)**: 
+   - To speed up the translation of virtual addresses to physical addresses, modern CPUs use a special cache called the TLB. The TLB stores recent page table entries to reduce the number of memory accesses needed for address translation.
+
+<br />
+
+<a name="how_does_os_alloc_phys_mem_and_map_simplified_example" id="how_does_os_alloc_phys_mem_and_map_simplified_example"></a>
+## Simplified Example
+
+Imagine the OS has a process that needs 12KB of memory. With a page size of 4KB, this would require three pages. The OS allocates three physical page frames from RAM and updates the page table of the process to map the virtual pages to these physical frames. When the process accesses memory, the virtual addresses are translated to physical addresses using the page table entries.
+
+<br />
 
