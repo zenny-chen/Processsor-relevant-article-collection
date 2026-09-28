@@ -140,6 +140,7 @@
 - [初探利用angr进行漏洞挖掘（上）](https://www.toutiao.com/a6800737709552828942/)
 - [成功率95%以上，Arm TIKTAG推测执行攻击曝光：影响Linux/Chrome](https://www.toutiao.com/article/7381726763715510794/)
 - [一个基于汇编的中心重定向框架](https://mp.weixin.qq.com/s?__biz=MzA5NzMwODI0MA==&mid=2647766644&idx=1&sn=134c8defba961c7573595bf7b2161bc6)
+- [IC设计思想：聚合（Aggregation）](https://mp.weixin.qq.com/s?__biz=MzkxNDUxNjI5MQ==&mid=2247486827&idx=1&sn=cc312ade4ab63f307f129860d3b82840)
 - [干货！嵌入式系统“四个地址”，划重点！](https://haokan.baidu.com/v?pd=wisenatural&vid=15776113190438521718)
 - [内存地址总线架构及工作原理](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484130&idx=1&sn=8a22aea36033498021b97ef7742cda1c)
 - [掌握SPI和I2C总线协议心得，调试起来果然方便多了......](https://www.toutiao.com/a6762391966253613582/)
