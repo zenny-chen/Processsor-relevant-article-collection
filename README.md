@@ -362,6 +362,108 @@
 - 整数字面量的表示：`<bit count>'<radix><digits>`。比如：`4'b0100`，`3'd7`，`8'h7f`
   - `<bit count>`：表示比特位数
   - `<radix>`：表示基数。`b` 表示二进制；`d` 表示十进制；`h` 表示十六进制
+- `logic` 关键字：
+
+在 SystemVerilog 中，`logic` 关键字表示一种 **四值逻辑变量数据类型**，可以保存：
+
+- `0`：逻辑低
+- `1`：逻辑高
+- `X`：未知态
+- `Z`：高阻态
+
+它主要用于替代 Verilog 中的 `reg`，并且比 `reg` 更通用。
+
+---
+
+## 1. 基本含义
+
+```systemverilog
+logic a;           // 1 位四值逻辑变量
+logic [7:0] data;  // 8 位四值逻辑变量
+```
+
+`logic` 声明的是 **变量**，不是线网。  
+它默认初始值为 `X`，而 `wire` 默认是 `Z`。
+
+---
+
+## 2. 可以这样使用
+
+```systemverilog
+logic q;
+logic d;
+
+always_ff @(posedge clk) begin
+    q <= d;
+end
+```
+
+```systemverilog
+logic y;
+assign y = a & b;
+```
+
+也可以用于端口：
+
+```systemverilog
+module m (
+    input  logic       clk,
+    input  logic [7:0] a,
+    output logic [7:0] y
+);
+```
+
+---
+
+## 3. 和 `reg`、`wire` 的区别
+
+| 类型 | 含义 |
+|---|---|
+| `reg` | Verilog 的变量类型，SV 中仍可用，但 `logic` 更通用 |
+| `wire` | 线网类型，用于多驱动、双向、三态总线等 |
+| `logic` | 四值逻辑变量，通常可替代 `reg`，也可被连续赋值驱动 |
+
+关键区别：
+
+- `logic` 是变量，不是线网。
+- `logic` 不能有多个驱动源。  
+  如果需要多驱动、双向总线或三态，必须用 `wire`、`tri` 等线网类型。
+- `inout` 端口不能声明为 `logic`，必须是线网类型。
+
+例如多驱动必须用 `wire`：
+
+```systemverilog
+wire bus;
+assign bus = en_a ? data_a : 1'bz;
+assign bus = en_b ? data_b : 1'bz;
+```
+
+---
+
+## 4. 和 `bit` 的区别
+
+- `logic`：四值，`0/1/X/Z`，适合仿真和可综合设计。
+- `bit`：二值，只有 `0/1`，没有 `X/Z`。
+
+---
+
+## 5. 端口默认规则
+
+- `input logic a`：`a` 是变量。
+- `output logic y`：`y` 是变量。
+- 如果不写类型，只写 `input a`，则默认是线网。
+- `inout` 必须是线网，不能是 `logic`。
+
+---
+
+## 6. 总结
+
+`logic` 在 SystemVerilog 中表示：
+
+> **一种四值逻辑变量类型，可表示 0、1、X、Z，通常用来替代 `reg`，也可以被 `assign` 连续赋值驱动。**
+
+但它不是线网，不能用于多驱动或双向总线。需要多驱动时，仍应使用 `wire`。
+
 - **`|`** 符号在 System Verilog 中的语义：有两种——
 
 1. **Bitwise OR**（按位或），比如：
