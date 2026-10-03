@@ -53,6 +53,7 @@
 - [AI实验室：CPU、GPU、TPU 和 NPU的发展历程和区别](https://zhuanlan.zhihu.com/p/670414115)（其中有对“**脉动**”的介绍：“脉动阵列,有时候也叫做脉动架构, 英文名 ***Systolic Array***”）
 - [智图事 | 90%的人都混淆的NPU与GPU！一篇看懂核心差异。拒绝浅层解读，看完直呼通透！](https://mp.weixin.qq.com/s?__biz=MzU3OTYzODUyMQ==&mid=2247484354&idx=1&sn=015f763d91c53a3646f8b895b7749e0a)
 - [DSA AI芯片，相对于GPGPU，究竟有多大的能效优势？主要是从哪些方面提高了能效？](https://zhuanlan.zhihu.com/p/457265026)
+- [DSA 设计方法论：从负载到 RTL，一颗 AI 芯片是怎么设计出来的](https://mp.weixin.qq.com/s?__biz=MzE5MTkwODUyNg==&mid=2247486256&idx=1&sn=4b043ff8ecfd8dba19424a22a268dfd4)
 - [An in-depth look at Google’s first Tensor Processing Unit (TPU)](https://cloud.google.com/blog/products/ai-machine-learning/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
@@ -87,6 +88,7 @@
 - [CPU怎么保证内存访问冲突？一致性？](https://www.toutiao.com/a6748042646326870541/)
 - [访问任意数组元素的性能相同？抛开Cache谈性能就是耍流氓](https://www.toutiao.com/a6821051726448034315/)
 - [阿里P8说要搞懂volatile 关键字，就靠这 26 张图](https://www.toutiao.com/i6898303659269145102/)
+- [【计算机体系结构连载 16】用了 atomic，数据就一定可见吗？从原子指令到内存序](https://mp.weixin.qq.com/s?__biz=MzYzOTAyMzU3OA==&mid=2247491142&idx=1&sn=7364a0dccd0e791a172fcd53e234a79c)
 - [linux下C++多线程并发之原子操作与无锁编程](https://www.toutiao.com/i6839967822085358092/)
 - [如何利用CAS技术实现无锁队列](https://www.toutiao.com/i6939798423780508174/)
 - [并发原理系列二：浅论Lock 与X86 Cache 一致性](https://www.toutiao.com/a6815374276636443148/)
