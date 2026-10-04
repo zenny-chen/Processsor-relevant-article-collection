@@ -201,6 +201,8 @@
 - [用Verilog实现流水移位寄存器，请尽量不要使用“阻塞赋值”](https://www.toutiao.com/a6746164678080086531/)
 - [Verilog学习笔记HDLBits——Multiplexers](https://blog.csdn.net/bigRr/article/details/125820169)
 - [FPGA学习-边沿检测技术，通过边沿采样技术实现上升沿捕获](https://www.toutiao.com/article/7287039457591804471/)
+- [Flip-flop (electronics)](https://en.wikipedia.org/wiki/Flip-flop_(electronics))
+- [触发器（The Flip-Flops）](https://zhuanlan.zhihu.com/p/646394098)
 - [扇出型封装结构可靠性试验方法及验证](https://www.toutiao.com/article/7284401507255042600/)
 - [芯片验证需要围绕DUT做什么？](https://www.jianshu.com/p/a1b3a471e485)
 - [FPGA开发设计中常用XILINX IP CORE的使用与仿真](https://www.toutiao.com/article/7284069288716108307/)
