@@ -17,6 +17,7 @@
   - [格雷码](#gray_code)
   - [卡诺图](#karnaugh_map)
 - [System Verilog 相关](#system_verilog_relevant)
+  - [在 System Verilog 中，像 `buf[a +: b]` 是什么意思](system_verilog_plus_colon_in_index)
   - [在 RTL 设计中“RTN”缩写是什么意思](#rtn_in_rtl_design)
   - [在 RTL 设计中“gated”是什么意思](#gated_in_rtl_design)
   - [在 RTL 设计中“credit”是什么意思](#credit_in_rtl_design)
@@ -493,6 +494,78 @@ logic e;
 
 assign e = |d;    // e = 1。等价于：d[0] | d[1] | d[2] | d[3]
 ```
+
+<br />
+
+<a name="system_verilog_plus_colon_in_index" id="system_verilog_plus_colon_in_index"></a>
+## 在 System Verilog 中，像 `buf[a +: b]` 是什么意思
+
+`buf[a +: b]` 是 SystemVerilog 中的**索引型部分选择（indexed part-select）**，用于从向量 `buf` 中动态选取一段连续的位。
+
+### 含义拆解
+
+| 部分 | 含义 |
+| :--- | :--- |
+| `buf` | 被选择的向量/数组 |
+| `a` | **起始索引**，可以是变量或表达式 |
+| `+:` | 表示从起始索引**向上（索引递增）**选择 |
+| `b` | **选择的位宽**，通常必须是常量表达式 |
+| `buf[a +: b]` | 从索引 `a` 开始，选取 `b` 位，索引依次为 `a, a+1, ..., a+b-1` |
+
+等价写法为：
+
+```systemverilog
+buf[a +: b]  ==  buf[a+b-1 : a]
+```
+
+即：高索引是 `a+b-1`，低索引是 `a`。
+
+### 对应的 `-:` 形式
+
+```systemverilog
+buf[a -: b]  ==  buf[a : a-b+1]
+```
+
+表示从索引 `a` 开始，**向下（索引递减）**选取 `b` 位，索引依次为 `a, a-1, ..., a-b+1`。
+
+### 示例
+
+假设：
+
+```systemverilog
+logic [7:0] buf;  // 索引范围 7 到 0
+```
+
+| 表达式 | 选中的位 | 等价写法 |
+| :--- | :--- | :--- |
+| `buf[2 +: 3]` | 索引 2, 3, 4 | `buf[4:2]` |
+| `buf[5 -: 3]` | 索引 5, 4, 3 | `buf[5:3]` |
+| `buf[i +: 4]` | 从变量 `i` 开始的 4 位 | 动态选择 |
+
+### 为什么要用 `+:` / `-:`？
+
+在 Verilog/SystemVerilog 中，**不能用变量作为普通部分选择的边界**，例如下面是非法的：
+
+```systemverilog
+buf[a : a+3]  // 错误：a 是变量，不能这样写
+```
+
+而索引型部分选择允许**起始索引是变量**，位宽是常量，因此可以动态选择一段连续位：
+
+```systemverilog
+buf[a +: 4]   // 合法，a 可以是变量
+```
+
+这在实现多路选择器、桶形移位器、动态字段提取等逻辑时非常常用，并且可综合。
+
+### 注意事项
+
+1. **位宽 `b` 通常是常量表达式**，不能随意用变量；普通索引型部分选择要求位宽为常量。
+2. **起始索引 `a` 可以是变量或表达式**，但必须保证选择范围不越界，否则仿真会得到不确定值，综合可能产生意外逻辑。
+3. `+:` 和 `-:` 只表示索引的增减方向，**与向量声明顺序无关**。例如 `logic [0:7] buf` 中，`buf[2 +: 3]` 仍然选择索引 2、3、4。
+4. 结果向量的位序始终是：**高索引为 MSB，低索引为 LSB**。
+
+简单记：`+:` 是从起点往索引大的方向取，`-:` 是从起点往索引小的方向取。
 
 <br />
 
