@@ -25,6 +25,7 @@
   - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
   - [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
   - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
+  - [在 RTL 设计中，类似于：Drain the prefetched commands by gating the inputs into `cmd_buffer` 是什么意思](drain_prefetched_commands_by_gating_inputs_into_buffer)
   - [Verilog 中的“高阻值”](#verilog_high_impedance)
 - [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
   - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
@@ -1168,6 +1169,59 @@ fsm2 控制 fsm3；
 
 一句话：  
 **cascade 就是把多个东西串起来，一级一级往下传。**
+
+<br />
+
+<a name="drain_prefetched_commands_by_gating_inputs_into_buffer" id="drain_prefetched_commands_by_gating_inputs_into_buffer"></a>
+## 在 RTL 设计中，类似于：Drain the prefetched commands by gating the inputs into `cmd_buffer` 是什么意思
+
+这句话在 RTL/硬件设计中的意思是：
+
+**通过“门控”进入 `cmd_buffer` 的输入信号，阻止新的命令再写入，同时让缓冲区里已经预取到的旧命令继续被下游读取/执行，直到 `cmd_buffer` 被排空。**
+
+拆开来看：
+
+| 英文片段 | 含义 |
+| :--- | :--- |
+| **Drain the prefetched commands** | 把已经预取到 `cmd_buffer` 里的命令“排空”/“消费完” |
+| **by gating the inputs into `cmd_buffer`** | 通过门控逻辑，禁止新的命令再进入 `cmd_buffer` |
+
+### 具体在 RTL 中通常怎么做？
+
+`cmd_buffer` 一般是一个 FIFO 或命令队列。所谓“gating inputs”，通常就是：
+
+- 拉低 `cmd_buffer` 的写使能 `wr_en`；
+- 或者用 AND 门屏蔽输入数据/有效信号；
+- 或者用 MUX 在 drain 模式下选择空/无效输入。
+
+例如：
+
+```verilog
+assign cmd_buffer_wr_en = normal_wr_en & ~drain_mode;
+assign cmd_buffer_wr_data = drain_mode ? '0 : normal_wr_data;
+```
+
+这样在 `drain_mode` 有效时：
+
+1. 新命令不再写入 `cmd_buffer`；
+2. 下游继续从 `cmd_buffer` 读命令；
+3. 直到 `cmd_buffer` 为空，排空完成。
+
+### 为什么要这么做？
+
+常见场景包括：
+
+- **模式切换 / 上下文切换**：要确保旧命令先处理完，再接受新命令；
+- **复位或错误恢复**：不能简单清空，否则旧命令可能丢失或状态不一致；
+- **切换命令来源**：比如从预取路径切到直接路径，需要先清掉预取队列；
+- **流水线排空**：让已经进入队列的命令走完，避免残留命令后续被意外执行。
+
+### 和“flush”的区别
+
+- **Drain**：排空，意思是让已有命令继续被消费掉，直到空；
+- **Flush**：清空/丢弃，通常直接把缓冲区复位或丢弃内容，不关心旧命令是否执行。
+
+所以这句话的核心是：**不要直接清掉 `cmd_buffer`，而是先关掉它的输入，让里面预取的命令自然被读完，达到“排空”效果。**
 
 <br />
 
