@@ -366,6 +366,7 @@
   - `<bit count>`：表示比特位数
   - `<radix>`：表示基数。`b` 表示二进制；`d` 表示十进制；`h` 表示十六进制
 - **pass through**：表示直通、旁路，不经过修改或额外处理。
+- System Verilog 中，`always_ff` 中的 **ff** 意思是：**Flip-Flop**，即“触发器”。
 - `logic` 关键字：
 
 在 SystemVerilog 中，`logic` 关键字表示一种 **四值逻辑变量数据类型**，可以保存：
