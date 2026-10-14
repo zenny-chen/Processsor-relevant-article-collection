@@ -103,6 +103,7 @@
 - [cache中的invalidate和clean](https://zhuanlan.zhihu.com/p/515450647)
 - [Cache替换策略之tree-PLRU](https://zhuanlan.zhihu.com/p/516582856)
 - [TLB: Translation-lookaside buffer](http://www.biscuitos.cn/blog/TLB/)
+- [一个核改了页表，为什么所有核都得跟着停一下：TLB Shootdown 才是隐藏成本](https://mp.weixin.qq.com/s?__biz=MzY0MDk1NTk0OQ==&mid=2247485127&idx=1&sn=2f32e0ffb2141f535efd34494e3c0f8e)
 - [内存是怎么映射到物理地址空间的？内存是连续分布的吗？](https://www.toutiao.com/a6699406470699549195/)
 - [彻底搞懂虚拟内存，虚拟地址，虚拟地址空间](https://www.toutiao.com/article/6952760982372385317/)
 - [虚拟地址翻译物理地址的流程终于搞懂了~](https://mp.weixin.qq.com/s/Sn6VzXIxmPWlbHu5k2tvaQ)
