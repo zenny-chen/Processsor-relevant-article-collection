@@ -159,6 +159,7 @@
 - [\[PCIe-DMA\]PCIe DMA机制详解](https://zhuanlan.zhihu.com/p/1943755619849966386)
 - [PCIe 错误处理机制及其软件实现 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484436&idx=1&sn=37dfa9cf6c3fa137c31168c853b6d992)
 - [CXL: 内存一致性及软件流程](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484787&idx=1&sn=0572446aa4d6770f50179090e36e658b)
+- [大容量CXL内存，开始把控制器拆成Chiplet](https://mp.weixin.qq.com/s?__biz=MzU3OTY1MTIzMA==&mid=2247521196&idx=2&sn=ac519acdfa0f8fdf85ac8b4eaea64dc7)
 - [PCIe: 多socket/RC下无NTB基于pcie switch组网系统设计 (一)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484813&idx=1&sn=8b595ddff48472a651b19d90cd86c53a)（RC：Root Complex（RC，根复合体））
 - [PCIe atomic 原子操作的优势](https://mp.weixin.qq.com/s?__biz=MzkxNDUxNjI5MQ==&mid=2247486735&idx=1&sn=f804399a4accdcfce8f4275ed2e12d71)
 - [基于统一协议GPU芯片高速互联Infinity Fabric的研究 (二)](https://mp.weixin.qq.com/s?__biz=Mzg2MDE3Nzg0OQ==&mid=2247484055&idx=1&sn=da20de93261778f582d9299a7fa7b10b)
