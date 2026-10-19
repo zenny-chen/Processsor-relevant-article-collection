@@ -1409,7 +1409,7 @@ assign bus = en_b ? data_b : 1'bz;
 <a name="about_cxs" id="about_cxs"></a>
 # 关于 CXS
 
-在 OMNI 总线的语境下直接提及 CXS 的情况比较少见，你很可能指的是 ARM AMBA 协议家族中的 **CXS（Credited eXtensible Stream）**。它是一种基于信用（credit）机制的高速流式协议，常被用作芯片内部不同协议层之间的“桥梁”。
+ARM AMBA 协议家族中的 **CXS（Credited eXtensible Stream）** 是一种基于信用（credit）机制的高速流式协议，常被用作芯片内部不同协议层之间的“桥梁”。
 
 ### 🚀 CXS 的核心定位与作用
 
