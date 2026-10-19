@@ -28,7 +28,7 @@
   - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
   - [在 RTL 设计中，类似于：Drain the prefetched commands by gating the inputs into `cmd_buffer` 是什么意思](drain_prefetched_commands_by_gating_inputs_into_buffer)
   - [Verilog 中的“高阻值”](#verilog_high_impedance)
-- [# 关于 CXS](#about_cxs)
+- [关于 CXS](#about_cxs)
 - [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
   - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
   - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example) 
