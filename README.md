@@ -115,6 +115,7 @@
 - [从硬件到软件：ARM SMMU全栈技术解析](https://mp.weixin.qq.com/s?__biz=Mzg4NDQ0OTI4Ng==&mid=2247493841&idx=1&sn=1ccee7294601ba644f03145ba4e5a14a)
 - [AMD/Intel/Nvidia加速推进Resizable BAR落地 游戏性能提升5-10%](https://www.toutiao.com/i6928553413164663309/)
 - [圖解RAM結構與原理，系統記憶體的Channel、Chip與Bank](https://www.techbang.com/posts/18381-from-the-channel-to-address-computer-main-memory-structures-to-understand?fbclid=IwAR0yj1dCTZmi0FpYLDV6BfwEj11iVtLMtIHq1bdep7CtH9V6YzFhliU6tK4)
+- [【图解】内存管理五大技术：MMU、IOMMU、MMIO、mmap、ioremap](https://mp.weixin.qq.com/s?__biz=MzkzNDk2NTUwOQ==&mid=2247495480&idx=1&sn=f3ac5a27f39162cd5498b11b9ce1266e)
 - [Content-addressable memory (**CAM**)](https://en.wikipedia.org/wiki/Content-addressable_memory)
 - [1.3：从芯片说起~自己动手做RAM](https://www.toutiao.com/i7049233754413400579/)
 - [1.4：从芯片说起~自己动手做ALU](https://www.toutiao.com/i7050281617067147806/)
