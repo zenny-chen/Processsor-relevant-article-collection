@@ -28,6 +28,7 @@
   - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
   - [在 RTL 设计中，类似于：Drain the prefetched commands by gating the inputs into `cmd_buffer` 是什么意思](drain_prefetched_commands_by_gating_inputs_into_buffer)
   - [Verilog 中的“高阻值”](#verilog_high_impedance)
+- [# 关于 CXS](#about_cxs)
 - [How does an operating system allocate physical memory and map it to the memory page?](#how_does_os_alloc_phys_mem_and_map)
   - [Memory Allocation and Paging Process](#mem_alloc_and_paging_process)
   - [Simplified Example](#how_does_os_alloc_phys_mem_and_map_simplified_example) 
@@ -1402,6 +1403,41 @@ assign bus = en_b ? data_b : 1'bz;
 
 在 Verilog 中，“高阻值”就是 **高阻态 `z`**，表示该节点未被驱动、相当于悬空或开路。  
 它常用于三态总线，让多个驱动源共享同一根线，但同一时刻只允许一个驱动。
+
+<br />
+
+# 关于 CXS
+
+在 OMNI 总线的语境下直接提及 CXS 的情况比较少见，你很可能指的是 ARM AMBA 协议家族中的 **CXS（Credited eXtensible Stream）**。它是一种基于信用（credit）机制的高速流式协议，常被用作芯片内部不同协议层之间的“桥梁”。
+
+### 🚀 CXS 的核心定位与作用
+
+CXS 的核心作用是**在高带宽场景下高效传输数据包**，它通常被置于以下两者之间：
+
+*   **上层协议层**：例如 CCIX、CXL 等负责缓存一致性或内存扩展的协议。
+*   **下层传输层**：例如 PCIe 控制器等负责物理传输的硬件模块。
+
+因此，CXS 提供的是一个**通用的、协议透明的流式接口**。无论上层传输的是 CCIX 包还是 CXL 事务，CXS 都只负责将这些数据流可靠、高速地传递下去，而不关心数据包的具体内容。
+
+### ⚙️ 关键特性与工作机制
+
+CXS 的设计旨在优化芯片内（On-Chip）和芯片间（Die-to-Die）的高性能互连。
+
+*   **流式传输与 Flit**：CXS 的数据传输以 **flit（flow control unit，流控单元）** 为单位。一个时钟周期内传输的数据称为一个 flit，多个数据包可以被封装在单个 flit 中，或者一个数据包也可以跨越多个 flit 进行传输。
+*   **基于信用的流控（Credit-Based Flow Control）**：这是 CXS 可靠传输的基础。发送端需要先获得接收端授予的“信用（credit）”才能发送数据，这能有效防止接收端缓冲区溢出。例如，在芯原（GUC）的 GLink CXS-Bridge IP 中，就明确支持 `CXS MAX CREDIT`（最大信用数）和 `Explicit Credit Return`（显式信用返还）等特性。
+*   **全双工独立通道**：CXS 接口包含独立的**发送（Transmit）和接收（Receive）** 信号路径，支持全双工通信。
+*   **可配置的数据宽度**：CXS 的数据通路宽度（Flit Width）是可配置的，常见的有 256、512、1024 位等，以适应不同带宽和面积的需求。
+
+### 💡 典型应用场景
+
+CXS 主要用于需要高带宽、低延迟的现代计算场景，例如：
+*   **多芯片（Multi-chip）互连**：在 Chiplet（芯粒）设计中，用于连接不同的小芯片。
+*   **机器学习与加速器**：为 AI 加速卡、网络卸载卡等提供高吞吐的数据通路。
+*   **内存数据库**：满足其对高速数据移动的需求。
+
+### 💎 总结
+
+CXS（Credited eXtensible Stream）是 AMBA 家族中一个专注于**高带宽数据包流式传输**的协议。它通过**信用机制**保证可靠的数据流控制，并作为上层协议（如 CXL、CCIX）与底层物理传输层（如 PCIe）之间的**通用适配层**，在现代高性能芯片和多芯片互连设计中扮演着关键角色。
 
 <br />
 
