@@ -216,6 +216,7 @@
 - [模拟IC设计原理图：逻辑电路是如何通过MOS管实现的](https://www.toutiao.com/article/7295652874917528098/)
 - [从零实现流水线 FP32 乘法器](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247493097&idx=1&sn=3ba810e9c0e0fb475de7ecf56254b9bb)
 - [从零手搓一个 VLIW 处理器：RTL、Verilator 与工程化全流程](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247493145&idx=1&sn=820d23708e6fa72b013658b0e5263b44)
+- [从零设计可配置级数的 RTL 流水线：组合逻辑与多级流水的复用](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247493237&idx=1&sn=c9ccb925d7716b3cceb43847ca96e1f2)
 
 <br />
 
