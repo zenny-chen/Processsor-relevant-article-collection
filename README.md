@@ -44,6 +44,7 @@
 - [数字芯片是怎样设计出来的？](https://www.toutiao.com/article/7169008826468188679/)
 - [为什么单颗裸芯被称为die?](https://www.toutiao.com/article/7327482006542484020/)
 - [一文读懂APU/BPU/CPU/DPU/EPU/FPU/GPU等处理器](http://www.eefocus.com/mcu-dsp/391017)
+- [AI芯片架构分野(2)：脉动阵列、SIMD、Vector与Tensor Engine：AI芯片为什么需要不止一种计算单元](https://mp.weixin.qq.com/s?__biz=MzI3ODE3MjI5NA==&mid=2247485301&idx=1&sn=c8f2d528803e0c4897c34981aa45f6ae)
 - [首个跨 NVIDIA, AMD, Intel, Apple 的 16 代微架构 GPU ISA 研究，硬件不变原语系统性分析与通用 ISA 构想](https://mp.weixin.qq.com/s?__biz=MjM5NDczOTA4NQ==&mid=2447902613&idx=1&sn=e73f53c29947b54a31b61c7f6f84660d)
 - [学习笔记丨《图解系统》](https://www.toutiao.com/article/7279780057982206479/)
 - [技术上比 ARM 处理器更优雅，却换了七个主人：MIPS 处理器四十年荒诞兴衰录](https://www.toutiao.com/article/7652233988165272106/)
