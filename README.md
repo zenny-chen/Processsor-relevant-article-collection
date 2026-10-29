@@ -26,6 +26,7 @@
   - [在 RTL 设计中，什么是“tie-back mux”](#tie-back_mux_in_rtl)
   - [在 RTL 设计中的“strobe bit”](#rtl_strobe_bit)
   - [在 RTL 设计中“Cascade”含义](#rtl_cascade)
+  - [在 RTL 设计中 的 backpressure（反压）](#rtl_backpressure)
   - [在 RTL 设计中，类似于：Drain the prefetched commands by gating the inputs into `cmd_buffer` 是什么意思](drain_prefetched_commands_by_gating_inputs_into_buffer)
   - [Verilog 中的“高阻值”](#verilog_high_impedance)
 - [关于 CXS](#about_cxs)
@@ -1258,6 +1259,143 @@ fsm2 控制 fsm3；
 
 一句话：  
 **cascade 就是把多个东西串起来，一级一级往下传。**
+
+<br />
+
+<a name="rtl_backpressure" id="rtl_backpressure"></a>
+## 在 RTL 设计中 的 backpressure（反压）
+
+在 RTL 设计中，**backpressure（反压）** 指的是：
+
+> **下游模块暂时无法接收数据时，向上游模块反馈“暂停发送”的信号或机制，防止数据丢失或缓冲区溢出。**
+
+简单说，反压就是 **下游对上游说“等一下，我还没准备好”**。
+
+---
+
+## 1. 为什么需要反压
+
+数据流通常是从上游流向下一级：
+
+```text
+上游 → FIFO / 处理模块 → 下游
+```
+
+如果下游处理慢、FIFO 满了，而上游还在不停发数据，就会：
+
+- 数据被覆盖丢失；
+- FIFO 溢出；
+- 状态不一致；
+- 系统死锁或功能错误。
+
+反压就是用来 **让上游在必要时停下来**。
+
+---
+
+## 2. 常见实现方式
+
+### 2.1 valid/ready 握手
+
+这是最典型的方式：
+
+```verilog
+input  wire valid;  // 上游：我有数据
+output wire ready;  // 下游：我能接收
+```
+
+只有 `valid && ready` 同时为 1 时，数据传输才发生。
+
+当下游 `ready = 0` 时，就是在反压上游：
+
+```text
+valid = 1, ready = 0  → 数据保持，等待
+```
+
+上游必须保持 `valid` 和数据不变，直到 `ready` 变高。
+
+### 2.2 FIFO 满信号
+
+FIFO 输出 `full` 或 `almost_full`：
+
+```verilog
+assign ready = !fifo_full;
+```
+
+FIFO 快满时提前反压，避免真正溢出。
+
+### 2.3 credit 流控
+
+发送端有 credit 才能发，没有 credit 就停：
+
+```verilog
+assign can_send = (credit_count != 0);
+```
+
+这也是一种反压，只是用“额度”而不是即时 `ready` 表达。
+
+### 2.4 时钟使能 / stall
+
+有些设计用 `stall` 或 `enable` 信号直接暂停上游流水线：
+
+```verilog
+always_ff @(posedge clk) begin
+    if (enable)
+        data_reg <= data_in;
+end
+```
+
+---
+
+## 3. 反压的传播
+
+反压往往会**逐级向上传播**：
+
+```text
+下游忙 → 中间 FIFO 满 → 中间模块拉低 ready → 上游停止发送
+```
+
+如果链路很长，反压传播延迟会很大，可能影响吞吐。常见优化：
+
+- 增加 FIFO 深度；
+- 使用 credit 机制；
+- 分段反压；
+- 使用 skid buffer 吸收反压延迟。
+
+---
+
+## 4. 组合反压 vs 时序反压
+
+- **组合反压**：`ready` 直接由组合逻辑产生，反压路径是组合路径。  
+  响应快，但可能造成长组合路径和时序问题。
+- **时序反压**：`ready` 打一拍再给上游。  
+  时序好，但反压响应慢一拍，需要额外缓冲（如 skid buffer）保证不丢数据。
+
+---
+
+## 5. 注意事项
+
+- 反压时上游必须**保持数据稳定**，不能因为 `ready=0` 就改变 `valid` 或数据。
+- 反压不能形成**组合环路**，否则可能振荡或死锁。
+- 反压传播路径要评估时序，必要时加寄存器。
+- 多路汇合时要注意公平性和死锁风险。
+- 反压和 `valid` 必须遵守协议，否则会出现数据重复或丢失。
+
+---
+
+## 6. 和 credit、outstanding 的关系
+
+- **反压**：下游告诉上游“现在别发”。
+- **credit**：预先给上游“还能发几个”的额度。
+- **outstanding**：已经发出但还没完成的事务数。
+
+credit 可以看作一种**预授权式的反压**，适合长延迟链路；`ready` 反压则是**即时式**的。
+
+---
+
+## 7. 一句话总结
+
+**反压 = 下游没空间时，通知上游暂停发送的机制。**  
+最常见形式是 `ready = 0`，也可以是 FIFO full、credit 耗尽或 stall 信号。它是保证数据流正确、不溢出、不丢失的核心流控手段。
 
 <br />
 
