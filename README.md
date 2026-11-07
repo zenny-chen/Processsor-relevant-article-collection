@@ -220,6 +220,7 @@
 - [从零手搓一个 VLIW 处理器：RTL、Verilator 与工程化全流程](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247493145&idx=1&sn=820d23708e6fa72b013658b0e5263b44)
 - [从零设计可配置级数的 RTL 流水线：组合逻辑与多级流水的复用](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247493237&idx=1&sn=c9ccb925d7716b3cceb43847ca96e1f2)
 - [芯片开源榜｜RTL Live：边写边出图](https://mp.weixin.qq.com/s?__biz=Mzg2MjY1MjgyMw==&mid=2247488183&idx=1&sn=47f55446a4f814f1bedfc8fbd8cc9c33)
+- [Verilog古法编程最后的倔强：Airtl 1.1.0 带来 Verilog 原生智能感知语法跳转](https://mp.weixin.qq.com/s?__biz=Mzk0NTQ5MDQ1Mw==&mid=2247484335&idx=1&sn=0d3b43618e1ac33cd6312d18ec3fa4ca)
 
 <br />
 
