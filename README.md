@@ -84,6 +84,7 @@
 - [x86-TSO memory model](https://mp.weixin.qq.com/s?__biz=MzU3Nzg4NDY4OQ==&mid=2247484548&idx=1&sn=abb9b660e9dcc743d0d2773fed9bed17)
 - > **TSO（Total Store Order）** 是 x86 架构的内存顺序模型，核心特点是保证所有处理器的写操作（store）在全局内存中按程序顺序可见，但允许读操作（load）与写操作之间乱序执行。 <br/> x86 通过 Store Buffer 和 MESI 协议协同工作：Store 操作先写入 Store Buffer（异步完成），最终按顺序刷新到内存；跨核通信时，MESI 协议确保写操作对所有核最终可见且顺序一致。 <br/> 同核环境下，Store Forwarding 机制让后续 Load 能直接从StoreBuffer读取数据，实现"看起来有序"的效果。TSO 通过强全局 Store 顺序和跨核延迟可见性，兼顾了性能优化与多核内存一致性。
 - > **WMO** 就是 **Weak Memory Ordering**，弱内存模型。
+- [C++ 无锁编程真相：为什么全量 memory_order_relaxed 在 x86 没事，到了 ARM64 就触发数据撕裂？](https://mp.weixin.qq.com/s?__biz=MzkzNjI3ODkyNQ==&mid=2247514121&idx=1&sn=441d6d5aabb984330de613772f595909)
 - [深入理解MCU启动原理](https://www.toutiao.com/article/7282659068987113999/)
 - [一则轶事：对更快的系统调用陷阱的追求](https://www.toutiao.com/i7056937402165674507/)
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
