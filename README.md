@@ -64,6 +64,7 @@
 - [探索高通骁龙处理器中的Hexagon NPU架构](https://www.toutiao.com/article/7293000269498434089/)
 - [NPU开发指南-加速器架构的设计空间探索](https://www.cnblogs.com/wujianming-110117/p/17698409.html)
 - [手把手教你制作 NPU](https://mp.weixin.qq.com/s?__biz=MzkxNDQ2ODIyMw==&mid=2247484026&idx=1&sn=a4ca1505cef0031d704cd0b344310958)
+- [Tenstorrent 架构深度剖析：从 Tensix 五核到 NoC 数据流](https://mp.weixin.qq.com/s?__biz=MzIzNDY5NDg5NQ==&mid=2247494158&idx=1&sn=dfd5a6f1b4109c1a6e1bb6c28fa58ab4)
 - [初创芯片企业篇：Tenstorrent的产品与技术](https://mp.weixin.qq.com/s?__biz=MzI0MTQ3NTM0OA==&mid=2247489645&idx=2&sn=534971e4c77d91ede5191f5ec7f63a4b)
 - [Tenstorrent Wormhole Analysis – A Scale Out Architecture for Machine Learning That Could Put Nvidia On Their Back Foot](https://semianalysis.com/2021/06/25/tenstorrent-wormhole-analysis-a-scale/)
 - [Memory on Tenstorrent](https://clehaxze.tw/gemlog/2025/03-17-memory-on-tenstorrent.gmi)
