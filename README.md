@@ -87,6 +87,7 @@
 - > **WMO** 就是 **Weak Memory Ordering**，弱内存模型。
 - > **ROB**：Reorder Buffer。
 - [C++ 无锁编程真相：为什么全量 memory_order_relaxed 在 x86 没事，到了 ARM64 就触发数据撕裂？](https://mp.weixin.qq.com/s?__biz=MzkzNjI3ODkyNQ==&mid=2247514121&idx=1&sn=441d6d5aabb984330de613772f595909)
+- [同样是 C++ 无锁队列，为什么教科书上的 CAS 写法一上多核压测就当场崩盘？](https://mp.weixin.qq.com/s?__biz=MzkzNjI3ODkyNQ==&mid=2247514338&idx=1&sn=117776ddd191635252d285b82cb365fc)
 - [深入理解MCU启动原理](https://www.toutiao.com/article/7282659068987113999/)
 - [一则轶事：对更快的系统调用陷阱的追求](https://www.toutiao.com/i7056937402165674507/)
 - [Google深度揭秘TPU：一文看懂原理，以及为何碾压GPU](https://www.toutiao.com/i6419483969682670081/)
