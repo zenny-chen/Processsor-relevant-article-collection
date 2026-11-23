@@ -178,6 +178,7 @@
 - [基于NoC的多处理器系统； NoC的基本结构和原理；Router；网络接口；流量控制机制；高速缓存一致性；Network on chip 片上网络； Multi-Processor System](https://www.ewbang.com/community/article/details/998026070.html)
 - [NPU 越堆越多，为什么先堵住的是 NoC？](https://mp.weixin.qq.com/s?__biz=Mzg2NTA1NzgxOQ==&mid=2247485747&idx=1&sn=1ec3681f2461dbc087a69a41cb9e50b9)
 - [AI芯片的NoC开始参与计算了：组播与归约如何改变片上互连](https://mp.weixin.qq.com/s?__biz=MzIzODI3MjM5Ng==&mid=2649818021&idx=2&sn=6793c261ad5916778515efa75421bf17)
+- [一种Mesh架构互联技术（Ramora FlooNoC）介绍一](https://mp.weixin.qq.com/s?__biz=MzYzODg5ODE4Ng==&mid=2247483805&idx=1&sn=eca3dcc681d1270e9da679ed60ff5f11)
 - [GPMC并口如何实现“小数据-低时延，大数据-高带宽”](https://www.toutiao.com/article/7284641738500178495/)
 - [正确理解 Thunderbolt 3 带宽与协议拓扑](https://www.toutiao.com/a6819563018888675854/)
 - [Multiplexer \(MUX\)](https://en.wikichip.org/wiki/multiplexer)
